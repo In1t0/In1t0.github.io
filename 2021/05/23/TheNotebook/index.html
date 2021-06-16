@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>TheNotebook | JadeTwan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="HackTheBox">
+    <meta name="description" content="有东西被加密了, 请输入密码查看.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TheNotebook">
+<meta property="og:url" content="https://in1t0.github.io/2021/05/23/TheNotebook/index.html">
+<meta property="og:site_name" content="JadeTwan">
+<meta property="og:description" content="有东西被加密了, 请输入密码查看.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-23T09:47:37.657Z">
+<meta property="article:author" content="JadeTwan">
+<meta property="article:tag" content="HackTheBox">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="JadeTwan" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand_bak.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">JadeTwan</h5>
+          <!--
+          <a href="mailto:fuckhackers@gmail.com" title="fuckhackers@gmail.com" class="mail">fuckhackers@gmail.com</a>
+          -->
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/cyberchef/index.html"  >
+                <i class="icon icon-lg icon-flask"></i>
+                Cyberchef
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/reverse-shell-generator/index.html"  >
+                <i class="icon icon-lg icon-terminal"></i>
+                ReverseShell
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/hacktricks/index.html"  >
+                <i class="icon icon-lg icon-book"></i>
+                Hacktricks
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/iN1t0" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">TheNotebook</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">TheNotebook</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-22T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2021-05-23
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-TheNotebook"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">TheNotebook</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-23 00:00:00" datetime="2021-05-22T16:00:00.000Z"  itemprop="datePublished">2021-05-23</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="738d52ba86dd8c82eb96842ca58b915e7b8197dd6022b82c38f0e43a27b22b88">5b0cb75bab93b3752e84afa0b9361499e92787e53be6ec2c8882a0620d4c93fc1840fbc55a5520305bfeec56f247bbeb5cbafaffd2de2632c663163444d1ba76ef308a33b4e863be152213848ea75efb40ff33a19c4937aa905410a8ff5b5d8fc50360525a4e8c9a283c121c2df634867ac528662ea26d76db9e189b4b00e7ee9782cd969edc8ce62123f90b0f413f53815446b3c87be18de435546913ea4ba5a65ab86afe2548f2236660b9a80de21e5eced13a5280af37e12653984809edcd93e1924ac0426a8c274d69faa6e85066f70120cf080ebb19015eaccff9f8d94f374860396108ec5c8083495150be58e5b0095dbf3b459f3c734417c2ab420c68859460026063b36d9763e6226ff28289d2a1a2895ae867de981a246a641d733ef9d2843f8e06025e5d86091a778266b5be08178fc17a70c9c5010781f5f981a7cffa3f96b4f158e23465a125ecb3b5dd5404b25288ab52ddb8267b5b85a5a343c1a4057b2dfcbbbe115595efd5b6a770c15495119c7cfba6f00aaa750dc4ba4140d672efae79d1e7578162a1b9765601752c7e1072f89c986c009e07b96398d126b2932202afd627cd4d61d8933f6d225017ca678f6f7b7513a9597adc64d8f65cf34d0d3b5e8836955681e2ec66ec64bc7e7313c12cd4a4f6e024aa80dfb87c39b356aa80442b099926a8b7ffe808c3bbcc5dfe2e9899b3536ab398fc5e43b4eb553e4e77cfc8a541b2f596717eeb319b112b7f60a2a6ef621383f5fca8cdc94e05c13ce3e04416730df650aaf2593252087215f506d0cf2e6e927e7bfcfb7c4c543ddf6d8944ac7e566a7e427e931a40cae8a14183087a162c35b5345b88dfb7ce8b097779f4b2629845fbfce302ad570515c04ff6d3e34291030a2f72bd654a00c2d3adc802566d346fa09bb9df2c5bfe12b8f9df2b7721e097b46571016795864f762305d40923e733b3e33e6208a7238397c635f999304d59f3d6b27704796a6a7e64b98b936960dd5b8bd7a6bd4b507d7e062e4dbb5e6054955fef79ff02be21790048f38cbfd37064437554706cc4ccbcc9a0e4d1114330ec124b48403f38c734d8fedcf88cfdac8e33c2d7989354fccc6b982f0e59371e096eed5123c8476824a2e938e181bb82a005492855ace990055bef4e79c65761e18d200a6eed20c77b89b1dcbdc675fc4931017eadeaa780c968dc7ff8c02fb2560bad7296989df6fb978b22455c36ee7d2a54e18c834b81426676a26181928152ab77e455153b74bb0d3e99b7ac01cea25fc81b6ff152ba5d8e63ce32367b6fc442029de0ddc8af2f9d291ed00b907389eb2c03473a535e7663b470b16f6a8d26dce343d6739b8f53151ca3476558818910a720d1e3b52faea1d92607dc67924eb241e667ed0f2ba22171b8f6f7111b080c3139c85085bc064c25308fd851a417dba88e64ac7b0341423824a484d707b5e3fd657e0ab75230a9a8fe49607d5dd8b4ac265ceb88cdabcb9d8a99d9c5bf707429ddb8809019c632a33ef9524a385db46e473dd6e924aad5ce1588c395e3d5cc8896047fa3c3a9aa0bae3d0bb4631769d9ba36968b2a43773eed55e331f06c8d002dab6f8d96d4558f1766667237be23e061395ef8b16773d48c991d37b4114443a472641da4792e4713b7619f36faaec2f9656c7872879e1ca7e0427b504cfcb8ece8eb21d5c5b648af51ae73e593aa595f0a43dec96c71b69002f88c2594ef2d5476a10c9e65eeb3cc0c561b011a71e2c9e74c9af3fdea7cd4c1bb350d0042e5b9a9f6201b5afc7edbc8f5b3c0c085833e621bfc0e07d879f492f5b09bd1d680e92c595704fa02ab258c2029d84531fbf35dd258e992ffcb000536ddd6c169d36e60618b86890e59bd89a84f2ea0312a38178705e3634e0773cbedad9c346719c1eaf162c4ff5e5de1396b52c64f0a8e39af419acbc5d2c5b2d418a29eaed0adc2c304feccc39ae04c26fbba13673aa6390d60aad56ea27700a1df7a8d470f25fe71c78a71880bd79068817c828ac810a85497777cd1e9fb0a4f44a6c8b39028368329f4c2da662ce2b02e09d0b1ddbfefad351fcb6ec19451834f791efa764f77db8be314f58ac855aecaf8ac59f1828065f8861aee4ebe91baea4872bfe93fce8cfb53b16d6fa48397e7247c5d48a00487168920f00f0270ead977834104a386cb583d0c816a4951c8b038528bc5ad1216db710c674c1130fea25cf5ee5424a15c6ee0dd804f939265625e76876932bd1cfc878ae0f3d9868cfbaf4effae593dbe979892a3a66c817bcbecbe5122e310980813a01618dc9f876902a5ffa80ef2b9fe8026d21d5e6e8d8e7c30fe6e5e71f82ca8da2cf8d0e82f27d14fa222eba9654e7ce3cd7511e40f08d518592d59fdbe275c59960bd3d1abd24e6887eb31d83c3ccb2e10c938de628356ed6d99f172a7e7d0e742a37743b244c397a5f5022b1cfd053b69a8f75c3bce999424d44b34fbedca10b44288c5d8197c92908bb4cb58c98be0762f4f1c553220fcede1d1a271a00b97b47ce5899c8750e07e48f93f24fcbcf221fe45eb462bcbae29106279a174565b82e02c64b94a99fa7a1b9f48ed1ea5aae87983a054ac208144ae705dff44a8cc3c2364049310d04f6b5037c5240f1134681052d7123830750c94616a13cdb383b7497ddc9519afe0d1cd3666070a88ccb77ebb697fc119215d21321549c80edff2652b351b25986c9b1fb8ebbfc05f3fcd8f207b8e23d52da2bb72cce3e7c4004ca1f00a6ed1b9a6daa22893a8cca19663eb53328599856926bdb96c77d083b7b79d5120297ce6340e8363fa2819d1f64e97fcfafc3a87ee1f7f315f8933a468eee77c02ffce2b9cbeb1dedb671c74324d2016c8aca0857067bf419bed9d7bff521f2adaf2c6c379172f23561f14e081a5f4a8578a632c941050c9c6a167c315e78f82f4d4d49ecb3d5b8dac409e76091b2d8ffc300c3f1f47670e6e1f1eea657661add65ccb74472a01f88cca39efa4350f2d895fdae5c2d0888e1b0177314f61a0e525fcc59864e8d6f2fe7fe687bf184d915c5e28fe4f240f2fa942a3bcdd2fc984fb7bc726b392f6b09f354db945d817adad5cbf2e2430402699ace1648cf83a10317d87afd333455ecce2ecc1aa84475616719f40ad4864a6050c0ade6686c2f5a0e9898236040808ed3f8d17f3ecae181cff1896fbffedf533812a7eed411b5a24c2249ab3617092471d124ef72e8a3dd4e0403e4040b321eb2a4deeb61a209bf59b5d8bac37cfd8e6fde341d8a75c5927428f09905195ec1a1309309bb86fdfdaf0a03ee25fa55886e11bdd2a99ff0077f1d49e427c024303abfe452c63ae5673b1fc13718d070f64afa87e3129e4f17871bc91a001f054a816e54ad6e73d9479562b6d22cad361ce55d11bcda18822502de513283a128890b537e52781c170ec6a1a94eefdec51f74fbbcf1d6d0c07ab20cdd26ccd343aeec32e1a1199a991c133bf0ff6a9ffe5f932a4a665fe8b862d03fd0d5a7169ecb0d9821d716899772881673da4b6f2f7c958e3de4f89012b33adfcb68bc6bba2fb57aa90ad0a2a50df100732f921deebb6fb032583d8c8f8b740c676f1cb0e2c06b6f3b24457308907aabe46088556d2026c5ec2e89cdeb0a4cc642a1910a057c1b905cab7ef7a8eb97df80497b2e8a1cb437f61d9f58413f9fc3eec5bdcffeafcc28365530582ea80465546956dd3958fcc2cc19f9df6b9f986cc95c6c21a7df9c735a0c2cb300e8f93102e4f32462dcd96d2699c812728ae76023c6f5ccaef191094e21568ba236f2f9ce57aeac78c3025a8419bdc2404d611cb5b0bbdb6584ebd456b02341c826577fff6674b48f8b3cd639495b0a8ab8da5e60baac778f75b22e63b16f1af5e348443d8978a3d72db20fa7a1998448d428c649676ebb9244aed0cb2cf6d5749b38600e13c9e19402a9e235df161a9260700964c4d1481dcb9ec4439615bc78bc2e329117f9feb6dd8a52dec42ce37effc19dcd99e78d4fbe1940b0c1d0f9ecae6022d1606ac035a0b0b87c851b61cd90566d4b9d2cdc5f5ed2f5b1adf983563ab2fb68af8a57a6065a5ac3ea7717d950c416409b5bd1c6c94af7bfee101ff06b6b453f4300e826c537eee532ce79dbab45b3d204915ba7d7236f11f751c27531695fa12ffb46977ef043dd3a62dad262ff72f58462ffdd83f1f2725f9ffd76494a6b9e6008beac1dae97bcee1a28246c1326cdebecde5089c4cd0ae01a67e27b1fc874c81f35ad88f11d6da6d450e4f43e4d39380a6268834ab7c9f347b6b1cc80813ea6ca8854caaae1543b4618450c08c58c4750e663dd197e5b3af177070393469d4d2838d263a4c512072672016b40eb25851ae3dcb043abf65bc657cc1c1a30db00b2f6443cb80cb8d866f6b16aaaa47439ede16c43acd7e36dcd83bb346d3ad1db0f766ca6aca1708802139784feda218bb6e71599c95967ba28394d6eb33e27e20486d3bf729d3c930e1d2c8171053c8b04ab7dd2f89698be79b3f5248edfcb683a6b6ee89d662d5b0660c8f51e7136ad5d209ccb0c3dbb22e7184d371c61e0b46efcd918b7ce645da3a6ffaa411271550835d83bcef937f70703a42f119e743ce68f44119b1ff7bbb4d1c3615040a3cc4e342c5c5e2b7739e89e148fe3980553dc3a960a41e7ef6da8bfdad8367c2102d89d113ad2e4dbeba93619742d2aceb15788f2491486d2abb3e2179f9594e72f19ae17cb0d0d244e7cc1eb977d96a3b590e643999665c949fa1c4be6186e541322f4ed8d960af69b7ad338baebdac06efce1be6351a5b21be0b716ddc01d4b4f161aacc731f6def8aab445a0f235246f839d9c4d5445ee88ab72006de9fc4e14ff018637f3f1bae7fba4f32bb0fbb0ab92d45e6ccaa19d941b84fe402f9ecb98aa4776d4785921c9a5346b94047bcc93fb128e419d192b6b0c1e0c32ae0986c3a33aca3914aba0585368bd6e1ac8b77eec42c2e49427631aa29c4afd63b4c44c1fefbcf0242141f5ee50e32010166707c3c749b3b23e9828b0ec6b2aa3ba28d9b739ccd2dced289cb73aa8786bec6f67809356fae94c347f9861961e8a894a0eb3b12c6637ea6c8143cb3ef88bde8d1c57550e08ad837b641dd0fd6b316fd843fd9a21d9836bbae7821ac2315c84714fcae0e05ea4822bdcd91c6d7cb42fe250d13c88e0d3cc7fe046e2443a1ec68114219f8f1ccf59f019c4dea9d48c6bf4e72f4078e37de9c68d2b3134d117207aafda88fe8596deacd63d9ca8e473e1d6c758d5ad8a391</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">IP、IC、IQ卡，统统告诉我密码.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2021-05-23T09:47:37.657Z" itemprop="dateUpdated">2021-05-23 17:47:37</time>
+</span><br>
+
+
+        
+        <font color="#FF0000">干</font><font color="#EA0015">啥</font><font color="#D5002A">啥</font><font color="#C0003F">不</font><font color="#AB0054">行</font><font color="#960069">，</font><font color="#81007E">吃</font><font color="#6C0093">饭</font><font color="#5700A8">第</font><font color="#4200BD">一</font><font color="#2D00D2">名</font><font color="#1800E7">。</font></br><a href="/2021/05/23/TheNotebook/" target="_blank" rel="external">https://in1t0.github.io/2021/05/23/TheNotebook/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://iN1t0.github.io">
+            <img src="/img/avatar.jpg" alt="JadeTwan">
+            JadeTwan
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HackTheBox/" rel="tag">HackTheBox</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2021/05/23/Tentacle/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Tentacle</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2021/05/23/Time/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Time</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>JadeTwan &copy; 2018 - 2021</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Pornhub';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'JadeTwan';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
