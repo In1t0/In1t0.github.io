@@ -75,6 +75,4 @@ cat /sys/class/graphics/fb0/virtual_size
 <pre><code class="bash">find / -group root -perm -g=w 2&gt;/dev/null
 </code></pre>
 <h2 id="Docker-Group"><a href="#Docker-Group" class="headerlink" title="Docker Group"></a>Docker Group</h2><p>You can mount the root filesystem of the host machine to an instance’s volume, so when the instance starts it immediately loads a <code>chroot</code> into that volume. This effectively gives you root on the machine.</p>
-<p><a href="https://github.com/KrustyHack/docker-privilege-escalation" target="_blank" rel="noopener">https://github.com/KrustyHack/docker-privilege-escalation</a></p>
-<p><a href="https://fosterelli.co/privilege-escalation-via-docker.html" target="_blank" rel="noopener">https://fosterelli.co/privilege-escalation-via-docker.html</a></p>
 <h2 id="lxc-lxd-Group"><a href="#lxc-lxd-Group" class="headerlink" title="lxc/lxd Group"></a>lxc/lxd Group</h2><p><a href="lxd-privilege-escalation.md">lxc - Privilege Escalation</a></p>
