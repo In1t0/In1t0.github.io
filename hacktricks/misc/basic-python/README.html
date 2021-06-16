@@ -1,0 +1,125 @@
+<h1 id="Basic-Python"><a href="#Basic-Python" class="headerlink" title="Basic Python"></a>Basic Python</h1><h2 id="Python-Basics"><a href="#Python-Basics" class="headerlink" title="Python Basics"></a>Python Basics</h2><h3 id="Usefull-information"><a href="#Usefull-information" class="headerlink" title="Usefull information"></a>Usefull information</h3><p>It is an interpreted language<br>list(xrange()) == range() –&gt; In python3 range is the xrange of python2 (it is not a list but a generator)<br>The difference between a Tuple and a List is that the position of a value in a tuple gives it a meaning but the lists are just ordered values. Tuples have structures, lists have order</p>
+<h3 id="Main-operations"><a href="#Main-operations" class="headerlink" title="Main operations"></a>Main operations</h3><p>To raise a number you should do: 3**2 (it isn’t 3^2)<br>If you do 2/3 it returns 1 because you are dividing two ints. If you want decimals you should divide floats (2.0/3.0).<br>i &gt;= j<br>i &lt;= j<br>i == j<br>i != j<br>a and b<br>a or b<br>not a<br>float(a)<br>int(a)<br>str(d)<br>ord(“A”) = 65<br>chr(65) = ‘A’<br>hex(100) = ‘0x64’<br>hex(100)[2:] = ‘64’<br>isinstance(1, int) = True<br>“a b”.split(“ “) = [‘a’, ‘b’]<br>“ “.join([‘a’, ‘b’]) = “a b”<br>“abcdef”.startswith(“ab”) = True<br>“abcdef”.contains(“abc”) = True<br>“abc\n”.strip() = “abc”<br>“apbc”.replace(“p”,””) = “abc”<br>dir(str) = List of all the availble methods<br>help(str) = Definition of the class str<br>“a”.upper() = “A”<br>“A”.lower() = “a”<br>“abc”.capitalize() = “Abc”<br>sum([1,2,3]) = 6<br>sorted([1,43,5,3,21,4])</p>
+<p><strong>Join chars</strong><br>3 * ’a’ = ‘aaa’<br>‘a’ + ‘b’ = ‘ab’<br>‘a’ + str(3) = ‘a3’<br>[1,2,3]+[4,5]=[1,2,3,4,5]</p>
+<p><strong>Parts of a list</strong><br>‘abc’[0] = ‘a’<br>‘abc’[-1] = ‘c’<br>‘abc’[1:3] = ‘bc’ from [1] to [2]<br>“qwertyuiop”[:-1] = ‘qwertyuio’</p>
+<p><strong>Comments</strong><br># One line comment<br>“””<br>Several lines comment<br>Another one<br>“””</p>
+<p><strong>Loops</strong></p>
+<pre><code class="text">if a:
+    #somethig
+elif b:
+    #something
+else:
+    #something
+
+while(a):
+    #comething
+
+for i in range(0,100):
+    #something from 0 to 99
+
+for letter in &quot;hola&quot;:
+    #something with letter in &quot;hola&quot;
+</code></pre>
+<h3 id="Tuples"><a href="#Tuples" class="headerlink" title="Tuples"></a>Tuples</h3><p>t1 = (1,’2,’three’)<br>t2 = (5,6)<br>t3 = t1 + t2 = (1, ‘2’, ‘three’, 5, 6)<br>(4,) = Singelton<br>d = () empty tuple<br>d += (4,) –&gt; Adding into a tuple<br>CANT! –&gt; t1[1] == ‘New value’<br>list(t2) = [5,6] –&gt; From tuple to list</p>
+<h3 id="List-array"><a href="#List-array" class="headerlink" title="List (array)"></a>List (array)</h3><p>d = [] empty<br>a = [1,2,3]<br>b = [4,5]<br>a + b = [1,2,3,4,5]<br>b.append(6) = [4,5,6]<br>tuple(a) = (1,2,3) –&gt; From list to tuple</p>
+<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><p>d = {} empty<br>monthNumbers={1:’Jan’, 2: ‘feb’,’feb’:2}—&gt; monthNumbers -&gt;{1:’Jan’, 2: ‘feb’,’feb’:2}<br>monthNumbers[1] = ‘Jan’<br>monthNumbers[‘feb’] = 2<br>list(monthNumbers) = [1,2,’feb’]<br>monthNumbers.values() = [‘Jan’,’feb’,2]<br>keys = [k for k in monthNumbers]<br>a={‘9’:9}<br>monthNumbers.update(a) = {‘9’:9, 1:’Jan’, 2: ‘feb’,’feb’:2}<br>mN = monthNumbers.copy() #Independent copy<br>monthNumbers.get(‘key’,0) #Check if key exists, Return value of monthNumbers[“key”] or 0 if it does not exists</p>
+<h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>In the sets there are not repetitions<br>myset = set([‘a’, ‘b’]) = {‘a’, ‘b’}<br>myset.add(‘c’) = {‘a’, ‘b’, ‘c’}<br>myset.add(‘a’) = {‘a’, ‘b’, ‘c’} #No repetitions<br>myset.update([1,2,3]) = set([‘a’, 1, 2, ‘b’, ‘c’, 3])<br>myset.discard(10) #If present, remove it, if not, nothing<br>myset.remove(10) #If present remove it, if not, rise exception<br>myset2 = set([1, 2, 3, 4])<br>myset.union(myset2) #Values it myset OR myset2<br>myset.intersection(myset2) #Values in myset AND myset2<br>myset.difference(myset2) #Values in myset but not in myset2<br>myset.symmetric_difference(myset2) #Values that are not in myset AND myset2 (not in both)<br>myset.pop() #Get the first element of the set and remove it<br>myset.intersection_update(myset2) #myset = Elements in both myset and myset2<br>myset.difference_update(myset2) #myset = Elements in myset but not in myset2<br>myset.symmetric_difference_update(myset2) #myset = Elements that are not in both</p>
+<h3 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a>Classes</h3><p>The method in __It__ will be the one used by sort in order to compare if an object of this class is bigger than other</p>
+<pre><code class="text">class Person(name):
+    def __init__(self,name):
+        self.name= name
+        self.lastName = name.split(‘ ‘)[-1]
+        self.birthday = None
+     def __It__(self, other):
+        if self.lastName == other.lastName:
+            return self.name &lt; other.name
+        return self.lastName &lt; other.lastName #Return True if the lastname is smaller
+
+    def setBirthday(self, month, day. year):
+        self.birthday = date tame.date(year,month,day)
+    def getAge(self):
+        return (date time.date.today() - self.birthday).days
+
+
+class MITPerson(Person):
+    nextIdNum = 0    # Attribute of the Class
+    def __init__(self, name):
+        Person.__init__(self,name)
+        self.idNum = MITPerson.nextIdNum  —&gt; Accedemos al atributo de la clase
+        MITPerson.nextIdNum += 1 #Attribute of the class +1
+
+    def __it__(self, other):
+        return self.idNum &lt; other.idNum
+</code></pre>
+<h3 id="map-zip-filter-lambda-sorted-and-one-liners"><a href="#map-zip-filter-lambda-sorted-and-one-liners" class="headerlink" title="map, zip, filter, lambda, sorted and one-liners"></a>map, zip, filter, lambda, sorted and one-liners</h3><p><strong>Map</strong> is like: [f(x) for x in iterable] –&gt; map(tutple,[a,b]) = [(1,2,3),(4,5)]<br>m = map(lambda x: x % 3 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9]) –&gt; [False, False, True, False, False, True, False, False, True]</p>
+<p><strong>zip</strong> stops when the shorter of foo or bar stops:</p>
+<pre><code class="text">for f, b in zip(foo, bar):
+    print(f, b)
+</code></pre>
+<p><strong>Lambda</strong> is used to define a function<br>(lambda x,y: x+y)(5,3) = 8 –&gt; Use lambda as simple <strong>function</strong><br><strong>sorted</strong>(range(-5,6), key=lambda x: x** 2) = [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5] –&gt; Use lambda to sort a list<br>m = <strong>filter</strong>(lambda x: x % 3 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9]) = [3, 6, 9] –&gt; Use lambda to filter<br><strong>reduce</strong> (lambda x,y: x*y, [1,2,3,4]) = 24</p>
+<pre><code class="text">def make_adder(n):
+    return lambda x: x+n
+plus3 = make_adder(3)
+plus3(4) = 7 # 3 + 4 = 7
+
+class Car:
+    crash = lambda self: print(&#39;Boom!&#39;)
+my_car = Car(); my_car.crash() = &#39;Boom!&#39;
+</code></pre>
+<p>mult1 = [x for x in [1, 2, 3, 4, 5, 6, 7, 8, 9] if x%3 == 0 ]</p>
+<h3 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions"></a>Exceptions</h3><pre><code class="text">def divide(x,y):    
+    try:
+        result = x/y
+    except ZeroDivisionError, e:
+        print “division by zero!” + str(e)
+    except TypeError:
+        divide(int(x),int(y))
+    else:
+        print “result i”, result
+    finally
+        print “executing finally clause in any case”
+</code></pre>
+<h3 id="Assert"><a href="#Assert" class="headerlink" title="Assert()"></a>Assert()</h3><p>If the condition is false the string will by printed in the screen</p>
+<pre><code class="text">def avg(grades, weights):
+    assert not len(grades) == 0, &#39;no grades data&#39;
+    assert len(grades) == &#39;wrong number grades&#39;
+</code></pre>
+<h3 id="Generators-yield"><a href="#Generators-yield" class="headerlink" title="Generators, yield"></a>Generators, yield</h3><p>A generator, instead of returning something, it “yields” something. When you access it, it will “return” the first value generated, then, you can access it again and it will return the next value generated. So, all the values are not generated at the same time and a lot of memory could be saved using this instead of a list with all the values.</p>
+<pre><code class="text">def myGen(n):
+    yield n
+    yield n + 1
+</code></pre>
+<p>g = myGen(6) –&gt; 6<br>next(g) –&gt; 7<br>next(g) –&gt; Error</p>
+<h3 id="Regular-Expresions"><a href="#Regular-Expresions" class="headerlink" title="Regular Expresions"></a>Regular Expresions</h3><p>import re<br>re.search(“\w”,”hola”).group() = “h”<br>re.findall(“\w”,”hola”) = [‘h’, ‘o’, ‘l’, ‘a’]<br>re.findall(“\w+(la)“,”hola caracola”) = [‘la’, ‘la’]</p>
+<p><strong>Special meanings:</strong><br>. –&gt; Everything<br>\w –&gt; [a-zA-Z0-9_]<br>\d –&gt; Number<br>\s –&gt; WhiteSpace char[ \n\r\t\f]<br>\S –&gt; Non-whitespace char<br>^ –&gt; Starts with<br>$ –&gt; Ends with  </p>
+<ul>
+<li>–&gt; One or more<br>* –&gt; 0 or more<br>? –&gt; 0 or 1 occurrences</li>
+</ul>
+<p><strong>Options:</strong><br>re.search(pat,str,re.IGNORECASE)<br>IGNORECASE<br>DOTALL –&gt; Allow dot to match newline<br>MULTILINE –&gt; Allow ^ and $ to match in different lines</p>
+<p>re.findall(“&lt;.*&gt;”, “&lt;b&gt;foo&lt;/b&gt;and&lt;i&gt;so on&lt;/i&gt;”) = [‘&lt;b&gt;foo&lt;/b&gt;and&lt;i&gt;so on&lt;/i&gt;’]<br>re.findall(“&lt;.*?&gt;”, “&lt;b&gt;foo&lt;/b&gt;and&lt;i&gt;so on&lt;/i&gt;”) = [‘&lt;b&gt;’, ‘&lt;/b&gt;’, ‘&lt;i&gt;’, ‘&lt;/i&gt;’]</p>
+<p>IterTools<br><strong>product</strong><br>from <strong>itertools</strong> import product –&gt; Generates combinations between 1 or more lists, perhaps repeating values, cartesian product (distributive property)<br>print list(<strong>product</strong>([1,2,3],[3,4])) = [(1, 3), (1, 4), (2, 3), (2, 4), (3, 3), (3, 4)]<br>print list(<strong>product</strong>([1,2,3],repeat = 2)) = [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]</p>
+<p><strong>permutations</strong><br>from <strong>itertools</strong> import <strong>permutations</strong> –&gt; Generates combinations of all characters in every position<br>print list(permutations([‘1’,’2’,’3’])) = [(‘1’, ‘2’, ‘3’), (‘1’, ‘3’, ‘2’), (‘2’, ‘1’, ‘3’),… Every posible combination<br>print(list(permutations(‘123’,2))) = [(‘1’, ‘2’), (‘1’, ‘3’), (‘2’, ‘1’), (‘2’, ‘3’), (‘3’, ‘1’), (‘3’, ‘2’)] Every posible combination of lenght 2</p>
+<p><strong>combinations</strong><br>from itertools import <strong>combinations</strong> –&gt; Generates all possible combinations without repeating characters (if “ab” existing, doesn’t generate “ba”)<br>print(list(<strong>combinations</strong>(‘123’,2))) –&gt; [(‘1’, ‘2’), (‘1’, ‘3’), (‘2’, ‘3’)]</p>
+<p><strong>combinations_with_replacement</strong><br>from itertools import <strong>combinations_with_replacement</strong> –&gt; Generates all possible combinations from the char onwards(for example, the 3rd is mixed from the 3rd onwards but not with the 2nd o first)<br>print(list(<strong>combinations_with_replacement</strong>(‘1133’,2))) = [(‘1’, ‘1’), (‘1’, ‘1’), (‘1’, ‘3’), (‘1’, ‘3’), (‘1’, ‘1’), (‘1’, ‘3’), (‘1’, ‘3’), (‘3’, ‘3’), (‘3’, ‘3’), (‘3’, ‘3’)]</p>
+<h3 id="Decorators"><a href="#Decorators" class="headerlink" title="Decorators"></a>Decorators</h3><p>Decorator that size the time that a function needs to be executed (from <a href="https://towardsdatascience.com/decorating-functions-in-python-619cbbe82c74" target="_blank" rel="noopener">here</a>):</p>
+<pre><code class="python">from functools import wraps
+import time
+def timeme(func):
+  @wraps(func)
+  def wrapper(*args, **kwargs):
+    print(&quot;Let&#39;s call our decorated function&quot;)
+    start = time.time()
+    result = func(*args, **kwargs)
+    print(&#39;Execution time: {} seconds&#39;.format(time.time() - start))
+    return result
+  return wrapper
+
+@timeme
+def decorated_func():
+  print(&quot;Decorated func!&quot;)
+</code></pre>
+<p>If you run it, you will see something like the following:</p>
+<pre><code class="text">Let&#39;s call our decorated function
+Decorated func!
+Execution time: 4.792213439941406e-05 seconds
+</code></pre>

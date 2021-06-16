@@ -1,0 +1,390 @@
+<h1 id="Escaping-from-KIOSKs"><a href="#Escaping-from-KIOSKs" class="headerlink" title="Escaping from KIOSKs"></a>Escaping from KIOSKs</h1><h2 id="Check-for-possible-actions-inside-the-GUI-application"><a href="#Check-for-possible-actions-inside-the-GUI-application" class="headerlink" title="Check for possible actions inside the GUI application"></a>Check for possible actions inside the GUI application</h2><ul>
+<li>Close/Close as</li>
+<li>Open/Open with</li>
+<li>Print</li>
+<li>Export/Import</li>
+<li>Search</li>
+<li>Scan</li>
+</ul>
+<p>You should check if you can:</p>
+<ul>
+<li>Modify or create new files</li>
+<li>Create symbolic links</li>
+<li>Get access to restricted areas</li>
+<li>Execute other apps</li>
+</ul>
+<p>Maybe using a <em>Open with</em> option you can open a <em>cmd.exe, command.com, Powershell/Powershell ISE, mmc.exe</em></p>
+<p>If you can execute something with commands you can execute binaries like <em>rundll32.exe, at.exe, schtasks.exe, regedit.exe, qwinsta.exe, systeminfo.exe, msinfo32.exe, msconfig.exe, wmic.exe, eventvwr.exe</em></p>
+<h2 id="Bypassing-path-restrictions"><a href="#Bypassing-path-restrictions" class="headerlink" title="Bypassing path restrictions"></a>Bypassing path restrictions</h2><ul>
+<li><strong>Environment variables</strong>: There are a lot of environment variables that are pointing to some path</li>
+<li><strong>UNC paths</strong>: Paths to connect to shared folders. You should try to connect to the C$ of the local machine (“\127.0.0.1\c$\Windows\System32”)</li>
+<li><strong>Other protocols</strong>: <em>about:, data:, ftp:, file:, mailto:, news:, res:, telnet:, view-source:</em></li>
+<li><strong>Symbolic links</strong></li>
+<li><strong>Shortcuts</strong>: CTRL+N (open new session), CTRL+R (Execute Commands), CTRL+SHIFT+ESC (Task Manager),  Windows+E (open explorer), CTRL-B, CTRL-I (Favourites), CTRL-H (History), CTRL-L, CTRL-O (File/Open Dialog), CTRL-P (Print Dialog), CTRL-S (Save As)<ul>
+<li>Hidden Administrative menu: CTRL-ALT-F8, CTRL-ESC-F9</li>
+</ul>
+</li>
+<li><strong>Shell URIs</strong>: <em>shell:Administrative Tools, shell:DocumentsLibrary, shell:Librariesshell:UserProfiles, shell:Personal, shell:SearchHomeFolder, shell:Systemshell:NetworkPlacesFolder, shell:SendTo, shell:UsersProfiles, shell:Common Administrative Tools, shell:MyComputerFolder, shell:InternetFolder</em></li>
+</ul>
+<h2 id="Download-Binaries"><a href="#Download-Binaries" class="headerlink" title="Download Binaries"></a>Download Binaries</h2><p>Console: <a href="https://sourceforge.net/projects/console/" target="_blank" rel="noopener">https://sourceforge.net/projects/console/</a><br>Explorer: <a href="https://sourceforge.net/projects/explorerplus/files/Explorer%2B%2B/" target="_blank" rel="noopener">https://sourceforge.net/projects/explorerplus/files/Explorer%2B%2B/</a><br>Registry editor: <a href="https://sourceforge.net/projects/uberregedit/" target="_blank" rel="noopener">https://sourceforge.net/projects/uberregedit/</a></p>
+<h2 id="Accessing-filesytem-from-the-browser"><a href="#Accessing-filesytem-from-the-browser" class="headerlink" title="Accessing filesytem from the browser"></a>Accessing filesytem from the browser</h2><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><table>
+<thead>
+<tr>
+<th align="left">File:/C:/windows</th>
+<th align="left">File:/C:/windows/</th>
+<th align="left">File:/C:/windows\</th>
+<th align="left">File:/C:\windows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">File:/C:\windows\</td>
+<td align="left">File:/C:\windows/</td>
+<td align="left">File://C:/windows</td>
+<td align="left">File://C:/windows/</td>
+</tr>
+<tr>
+<td align="left">File://C:/windows\</td>
+<td align="left">File://C:\windows</td>
+<td align="left">File://C:\windows/</td>
+<td align="left">File://C:\windows\</td>
+</tr>
+<tr>
+<td align="left">C:/windows</td>
+<td align="left">C:/windows/</td>
+<td align="left">C:/windows\</td>
+<td align="left">C:\windows</td>
+</tr>
+<tr>
+<td align="left">C:\windows\</td>
+<td align="left">C:\windows/</td>
+<td align="left">%WINDIR%</td>
+<td align="left">%TMP%</td>
+</tr>
+<tr>
+<td align="left">%TEMP%</td>
+<td align="left">%SYSTEMDRIVE%</td>
+<td align="left">%SYSTEMROOT%</td>
+<td align="left">%APPDATA%</td>
+</tr>
+<tr>
+<td align="left">%HOMEDRIVE%</td>
+<td align="left">%HOMESHARE</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h2 id="Abusing-Common-Dialogs"><a href="#Abusing-Common-Dialogs" class="headerlink" title="Abusing Common Dialogs"></a>Abusing Common Dialogs</h2><p><strong>Common Dialogs</strong> are those options of <strong>saving a file</strong>, <strong>opening a file</strong>, selecting a font, a color… Most of them will <strong>offer a full Explorer functionality</strong>. This means that you will be able to access Explorer functionalities if you can access these options.</p>
+<h2 id="Browsers-tricks"><a href="#Browsers-tricks" class="headerlink" title="Browsers tricks"></a>Browsers tricks</h2><p>Backup iKat versions:</p>
+<p><a href="http://swin.es/k/" target="_blank" rel="noopener">http://swin.es/k/</a><br><a href="http://www.ikat.kronicd.net/" target="_blank" rel="noopener">http://www.ikat.kronicd.net/</a>  </p>
+<h2 id="Internet-Explorer-Tricks"><a href="#Internet-Explorer-Tricks" class="headerlink" title="Internet Explorer Tricks"></a>Internet Explorer Tricks</h2><h3 id="‘Image-Toolbar’"><a href="#‘Image-Toolbar’" class="headerlink" title="‘Image Toolbar’"></a>‘Image Toolbar’</h3><p>It’s a toolbar that appears on the top-left of image when it’s clicked. You will be able to Save, Print, Mailto, Open “My Pictures” in Explorer. The Kiosk needs to be using Internet Explorer.</p>
+<h3 id="Shell-Protocol"><a href="#Shell-Protocol" class="headerlink" title="Shell Protocol"></a>Shell Protocol</h3><p>Type this URLs to obtain an Explorer view:</p>
+<ul>
+<li><code>Shell:Profile</code></li>
+<li><code>Shell:ProgramFiles</code></li>
+<li><code>Shell:System</code></li>
+<li><code>Shell:ControlPanelFolder</code></li>
+<li><code>Shell:Windows</code></li>
+<li><code>shell:::{21EC2020-3AEA-1069-A2DD-08002B30309D}</code> –&gt; Control Panel</li>
+<li><code>shell:::{20D04FE0-3AEA-1069-A2D8-08002B30309D}</code> –&gt; My Computer</li>
+<li><code>shell:::{{208D2C60-3AEA-1069-A2D7-08002B30309D}}</code> –&gt; My Network Places</li>
+<li><code>shell:::{871C5380-42A0-1069-A2EA-08002B30309D}</code> –&gt; Internet Explorer</li>
+</ul>
+<h2 id="iPad"><a href="#iPad" class="headerlink" title="iPad"></a>iPad</h2><h3 id="Gestures-and-bottoms"><a href="#Gestures-and-bottoms" class="headerlink" title="Gestures and bottoms"></a>Gestures and bottoms</h3><h4 id="Swipe-up-with-four-or-five-fingers-Double-tap-Home-button"><a href="#Swipe-up-with-four-or-five-fingers-Double-tap-Home-button" class="headerlink" title="Swipe up with four (or five) fingers / Double-tap Home button"></a>Swipe up with four (or five) fingers / Double-tap Home button</h4><p>To view the multitask view and change App</p>
+<h4 id="Swipe-one-way-or-another-with-four-or-five-fingers"><a href="#Swipe-one-way-or-another-with-four-or-five-fingers" class="headerlink" title="Swipe one way or another with four or five fingers"></a>Swipe one way or another with four or five fingers</h4><p>In order to change to the next/last App</p>
+<h4 id="Pinch-the-screen-with-five-fingers-Touch-Home-button-Swipe-up-with-1-finger-from-the-bottom-of-the-screen-in-a-quick-motion-to-the-up"><a href="#Pinch-the-screen-with-five-fingers-Touch-Home-button-Swipe-up-with-1-finger-from-the-bottom-of-the-screen-in-a-quick-motion-to-the-up" class="headerlink" title="Pinch the screen with five fingers / Touch Home button / Swipe up with 1 finger from the bottom of the screen in a quick motion to the up"></a>Pinch the screen with five fingers / Touch Home button / Swipe up with 1 finger from the bottom of the screen in a quick motion to the up</h4><p>To access Home</p>
+<h4 id="Swipe-one-finger-from-the-bottom-of-the-screen-just-1-2-inches-slow"><a href="#Swipe-one-finger-from-the-bottom-of-the-screen-just-1-2-inches-slow" class="headerlink" title="Swipe one finger from the bottom of the screen just 1-2 inches (slow)"></a>Swipe one finger from the bottom of the screen just 1-2 inches (slow)</h4><p>The dock will appear</p>
+<h4 id="Swipe-down-from-the-top-of-the-display-with-1-finger"><a href="#Swipe-down-from-the-top-of-the-display-with-1-finger" class="headerlink" title="Swipe down from the top of the display with 1 finger"></a>Swipe down from the top of the display with 1 finger</h4><p>To view your notifications</p>
+<h4 id="Swipe-down-with-1-finger-the-top-right-corner-of-the-screen"><a href="#Swipe-down-with-1-finger-the-top-right-corner-of-the-screen" class="headerlink" title="Swipe down with 1 finger the top-right corner of the screen"></a>Swipe down with 1 finger the top-right corner of the screen</h4><p>To see iPad Pro’s control centre</p>
+<h4 id="Swipe-1-finger-from-the-left-of-the-screen-1-2-inches"><a href="#Swipe-1-finger-from-the-left-of-the-screen-1-2-inches" class="headerlink" title="Swipe 1 finger from the left of the screen 1-2 inches"></a>Swipe 1 finger from the left of the screen 1-2 inches</h4><p>To see Today view</p>
+<h4 id="Swipe-fast-1-finger-from-the-centre-of-the-screen-to-the-right-or-left"><a href="#Swipe-fast-1-finger-from-the-centre-of-the-screen-to-the-right-or-left" class="headerlink" title="Swipe fast 1 finger from the centre of the screen to the right or left"></a>Swipe fast 1 finger from the centre of the screen to the right or left</h4><p>To change to next/last App</p>
+<h4 id="Press-and-hold-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-Move-the-Slide-to-power-off-slider-all-the-way-to-the-right"><a href="#Press-and-hold-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-Move-the-Slide-to-power-off-slider-all-the-way-to-the-right" class="headerlink" title="Press and hold the On/Off/Sleep button at the upper-right corner of the iPad +  Move the Slide to power off slider all the way to the right,"></a>Press and hold the On/<strong>Off</strong>/Sleep button at the upper-right corner of the <strong>iPad +</strong>  Move the Slide to <strong>power off</strong> slider all the way to the right,</h4><p>To power off</p>
+<h4 id="Press-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-and-the-Home-button-for-a-few-second"><a href="#Press-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-and-the-Home-button-for-a-few-second" class="headerlink" title="Press the  On/Off/Sleep button at the upper-right corner of the iPad and the Home button for a few second"></a>Press the  On/<strong>Off</strong>/Sleep button at the upper-right corner of the <strong>iPad and the Home button for a few second</strong></h4><p>To force a hard power off</p>
+<h4 id="Press-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-and-the-Home-button-quickly"><a href="#Press-the-On-Off-Sleep-button-at-the-upper-right-corner-of-the-iPad-and-the-Home-button-quickly" class="headerlink" title="Press the  On/Off/Sleep button at the upper-right corner of the iPad and the Home button quickly"></a>Press the  On/<strong>Off</strong>/Sleep button at the upper-right corner of the <strong>iPad and the Home button quickly</strong></h4><p>To take a screenshot that will pop up in the lower left of the display. Press both buttons at the same time very briefly as if you hold them a few seconds a hard power off will be performed.</p>
+<h3 id="Shortcuts"><a href="#Shortcuts" class="headerlink" title="Shortcuts"></a>Shortcuts</h3><p>You should have an iPad keyboard or a USB keyboard adaptor. Only shortcuts that could help escaping from the application will be shown here.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">⌘</td>
+<td align="left">Command</td>
+</tr>
+<tr>
+<td align="left">⌥</td>
+<td align="left">Option (Alt)</td>
+</tr>
+<tr>
+<td align="left">⇧</td>
+<td align="left">Shift</td>
+</tr>
+<tr>
+<td align="left">↩</td>
+<td align="left">Return</td>
+</tr>
+<tr>
+<td align="left">⇥</td>
+<td align="left">Tab</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">Control</td>
+</tr>
+<tr>
+<td align="left">←</td>
+<td align="left">Left Arrow</td>
+</tr>
+<tr>
+<td align="left">→</td>
+<td align="left">Right Arrow</td>
+</tr>
+<tr>
+<td align="left">↑</td>
+<td align="left">Up Arrow</td>
+</tr>
+<tr>
+<td align="left">↓</td>
+<td align="left">Down Arrow</td>
+</tr>
+</tbody></table>
+<h4 id="System-shortcuts"><a href="#System-shortcuts" class="headerlink" title="System shortcuts"></a>System shortcuts</h4><p>These shortcuts are for the visual settings and sound settings, depending on the use of the iPad.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Shortcut</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">F1</td>
+<td align="left">Dim Sscreen</td>
+</tr>
+<tr>
+<td align="left">F2</td>
+<td align="left">Brighten screen</td>
+</tr>
+<tr>
+<td align="left">F7</td>
+<td align="left">Back one song</td>
+</tr>
+<tr>
+<td align="left">F8</td>
+<td align="left">Play/pause</td>
+</tr>
+<tr>
+<td align="left">F9</td>
+<td align="left">Skip song</td>
+</tr>
+<tr>
+<td align="left">F10</td>
+<td align="left">Mute</td>
+</tr>
+<tr>
+<td align="left">F11</td>
+<td align="left">Decrease volume</td>
+</tr>
+<tr>
+<td align="left">F12</td>
+<td align="left">Increase volume</td>
+</tr>
+<tr>
+<td align="left">⌘ Space</td>
+<td align="left">Display a list of available languages; to choose one, tap the space bar again.</td>
+</tr>
+</tbody></table>
+<h4 id="iPad-navigation"><a href="#iPad-navigation" class="headerlink" title="iPad navigation"></a>iPad navigation</h4><table>
+<thead>
+<tr>
+<th align="left">Shortcut</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">⌘H</td>
+<td align="left">Go to Home</td>
+</tr>
+<tr>
+<td align="left">⌘⇧H (Command-Shift-H)</td>
+<td align="left">Go to Home</td>
+</tr>
+<tr>
+<td align="left">⌘ (Space)</td>
+<td align="left">Open Spotlight</td>
+</tr>
+<tr>
+<td align="left">⌘⇥ (Command-Tab)</td>
+<td align="left">List last ten used apps</td>
+</tr>
+<tr>
+<td align="left">⌘~</td>
+<td align="left">Go t the last App</td>
+</tr>
+<tr>
+<td align="left">⌘⇧3 (Command-Shift-3)</td>
+<td align="left">Screenshot (hovers in bottom left to save or act on it)</td>
+</tr>
+<tr>
+<td align="left">⌘⇧4</td>
+<td align="left">Screenshot and open it in the editor</td>
+</tr>
+<tr>
+<td align="left">Press and hold ⌘</td>
+<td align="left">List of shortcuts available for the App</td>
+</tr>
+<tr>
+<td align="left">⌘⌥D (Command-Option/Alt-D)</td>
+<td align="left">Brings up the dock</td>
+</tr>
+<tr>
+<td align="left">^⌥H (Control-Option-H)</td>
+<td align="left">Home button</td>
+</tr>
+<tr>
+<td align="left">^⌥H H (Control-Option-H-H)</td>
+<td align="left">Show multitask bar</td>
+</tr>
+<tr>
+<td align="left">^⌥I (Control-Option-i)</td>
+<td align="left">Item chooser</td>
+</tr>
+<tr>
+<td align="left">Escape</td>
+<td align="left">Back button</td>
+</tr>
+<tr>
+<td align="left">→ (Right arrow)</td>
+<td align="left">Next item</td>
+</tr>
+<tr>
+<td align="left">← (Left arrow)</td>
+<td align="left">Previous item</td>
+</tr>
+<tr>
+<td align="left">↑↓ (Up arrow, Down arrow)</td>
+<td align="left">Simultaneously tap selected item</td>
+</tr>
+<tr>
+<td align="left">⌥ ↓ (Option-Down arrow)</td>
+<td align="left">Scroll down</td>
+</tr>
+<tr>
+<td align="left">⌥↑ (Option-Up arrow)</td>
+<td align="left">Scroll up</td>
+</tr>
+<tr>
+<td align="left">⌥← or ⌥→ (Option-Left arrow or Option-Right arrow)</td>
+<td align="left">Scroll left or right</td>
+</tr>
+<tr>
+<td align="left">^⌥S (Control-Option-S)</td>
+<td align="left">Turn VoiceOver speech on or off</td>
+</tr>
+<tr>
+<td align="left">⌘⇧⇥ (Command-Shift-Tab)</td>
+<td align="left">Switch to the previous app</td>
+</tr>
+<tr>
+<td align="left">⌘⇥ (Command-Tab)</td>
+<td align="left">Switch back to the original app</td>
+</tr>
+<tr>
+<td align="left">←+→, then Option + ← or Option+→</td>
+<td align="left">Navigate through Dock</td>
+</tr>
+</tbody></table>
+<h4 id="Safari-shortcuts"><a href="#Safari-shortcuts" class="headerlink" title="Safari shortcuts"></a>Safari shortcuts</h4><table>
+<thead>
+<tr>
+<th align="left">Shortcut</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">⌘L (Command-L)</td>
+<td align="left">Open Location</td>
+</tr>
+<tr>
+<td align="left">⌘T</td>
+<td align="left">Open a new tab</td>
+</tr>
+<tr>
+<td align="left">⌘W</td>
+<td align="left">Close the current tab</td>
+</tr>
+<tr>
+<td align="left">⌘R</td>
+<td align="left">Refresh the current tab</td>
+</tr>
+<tr>
+<td align="left">⌘.</td>
+<td align="left">Stop loading the current tab</td>
+</tr>
+<tr>
+<td align="left">^⇥</td>
+<td align="left">Switch to the next tab</td>
+</tr>
+<tr>
+<td align="left">^⇧⇥ (Control-Shift-Tab)</td>
+<td align="left">Move to the previous tab</td>
+</tr>
+<tr>
+<td align="left">⌘L</td>
+<td align="left">Select the text input/URL field to modify it</td>
+</tr>
+<tr>
+<td align="left">⌘⇧T (Command-Shift-T)</td>
+<td align="left">Open last closed tab (can be used several times)</td>
+</tr>
+<tr>
+<td align="left">⌘[</td>
+<td align="left">Goes back one page in your browsing history</td>
+</tr>
+<tr>
+<td align="left">⌘]</td>
+<td align="left">Goes forward one page in your browsing history</td>
+</tr>
+<tr>
+<td align="left">⌘⇧R</td>
+<td align="left">Activate Reader Mode</td>
+</tr>
+</tbody></table>
+<h4 id="Mail-shortcuts"><a href="#Mail-shortcuts" class="headerlink" title="Mail shortcuts"></a>Mail shortcuts</h4><table>
+<thead>
+<tr>
+<th align="left">Shortcut</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">⌘L</td>
+<td align="left">Open Location</td>
+</tr>
+<tr>
+<td align="left">⌘T</td>
+<td align="left">Open a new tab</td>
+</tr>
+<tr>
+<td align="left">⌘W</td>
+<td align="left">Close the current tab</td>
+</tr>
+<tr>
+<td align="left">⌘R</td>
+<td align="left">Refresh the current tab</td>
+</tr>
+<tr>
+<td align="left">⌘.</td>
+<td align="left">Stop loading the current tab</td>
+</tr>
+<tr>
+<td align="left">⌘⌥F (Command-Option/Alt-F)</td>
+<td align="left">Search in your mailbox</td>
+</tr>
+</tbody></table>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><a href="https://www.macworld.com/article/2975857/6-only-for-ipad-gestures-you-need-to-know.html" target="_blank" rel="noopener">https://www.macworld.com/article/2975857/6-only-for-ipad-gestures-you-need-to-know.html</a></li>
+<li><a href="https://www.tomsguide.com/us/ipad-shortcuts,news-18205.html" target="_blank" rel="noopener">https://www.tomsguide.com/us/ipad-shortcuts,news-18205.html</a></li>
+<li><a href="https://thesweetsetup.com/best-ipad-keyboard-shortcuts/" target="_blank" rel="noopener">https://thesweetsetup.com/best-ipad-keyboard-shortcuts/</a></li>
+<li><a href="http://www.iphonehacks.com/2018/03/ipad-keyboard-shortcuts.html" target="_blank" rel="noopener">http://www.iphonehacks.com/2018/03/ipad-keyboard-shortcuts.html</a></li>
+</ul>
