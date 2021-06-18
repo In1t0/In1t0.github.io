@@ -1,399 +1,2512 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://in1t0.github.io/Cap.html</loc>
-    
-    <lastmod>2021-06-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tools.html</loc>
-    
-    <lastmod>2021-05-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Pivotapi.html</loc>
-    
-    <lastmod>2021-05-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Knife.html</loc>
-    
-    <lastmod>2021-05-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/index.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/categories/index.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Tentacle.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/TheNotebook.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Time.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Unobtainum.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Ttenet.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Spectra.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/SpringBootVulExploit.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/OpenKeyS.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Ophiuchi.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Pit.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Schooled.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/ScriptKiddie.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Cereal.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Delivery.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Love.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Monitors.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Atom.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Breadcrumbs.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Bucket.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Academy.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/Armageddon.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2020-02-28-BUUCTF_WEB_EasySQL1.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-11-28-BUUCTF_WEB_[zjctf]NiZhuanSiWei.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2020-07-08-BUUCTF_WEB_BabySQL1.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2020-07-08-BUUCTF_WEB_HardSQL1.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2020-07-25-BUUCTF_WEB_BabySQli.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-25-BUUCTF_WEB_ikun.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-24-BUUCTF_WEB_Dropbox.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-24-BUUCTF_WEB_Hack-World.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-23-WEB_LEARNING.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-20-sql.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-20-XCTF_WEB_ics-07.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-18-XCTF_WEB_bug.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-19-XCTF_WEB_web2.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-18-XCTF_WEB_i-got-id-200.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_Cat.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_ics-04.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_NaNNaNNaNNaN-Batman.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_ics-05.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-07-Jarvisoj_web_Chopper.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-09-Jarvisoj_web_Easy_Gallery.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-12-CTF_SQL.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/2019-07-04-Jarvisoj_web_IN_A_Mess.html</loc>
-    
-    <lastmod>2021-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/CTF-WP/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/sql/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/PHP/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/AWD/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/HackTheBox/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://in1t0.github.io/tags/Tools/</loc>
-    <lastmod>2021-06-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
-  
+<url>
+  <loc>https://in1t0.github.io/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/archives/</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/cyberchef/index.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/reverse-shell-generator/index.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/index.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/PeiQiWIKI/index.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/ctf-wiki/index.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Cap.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/HackTheBox/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tools.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/Tools/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Knife.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Pivotapi.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/SpringBootVulExploit.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-23-WEB_LEARNING.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Academy.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Atom.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Armageddon.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Breadcrumbs.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/page/2/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/page/3/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/page/6/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/archives/page/2/</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/archives/page/3/</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/archives/page/6/</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/CTF-WP/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/sql/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/PHP/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/tags/AWD/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-04-Jarvisoj_web_IN_A_Mess.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-06-Jarvisoj_web_flag%E5%9C%A8%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E9%87%8C.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-07-Jarvisoj_web_Chopper.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-04-Jarvisoj_web_%E7%A5%9E%E7%9B%BE%E5%B1%80%E7%9A%84%E7%A7%98%E5%AF%86.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-11-BUUCTF_WEB_%E9%9A%8F%E4%BE%BF%E6%B3%A8.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-09-Jarvisoj_web_Easy_Gallery.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_Cat.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_ics-04.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_NaNNaNNaNNaN-Batman.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-16-XCTF_WEB_ics-05.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-18-XCTF_WEB_bug.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-19-XCTF_WEB_web2.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-18-XCTF_WEB_i-got-id-200.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-24-BUUCTF_WEB_Dropbox.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-20-sql.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-20-XCTF_WEB_ics-07.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-24-BUUCTF_WEB_Hack-World.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-02-28-BUUCTF_WEB_EasySQL1.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-11-28-BUUCTF_WEB_%5Bzjctf%5DNiZhuanSiWei.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-07-08-BUUCTF_WEB_BabySQL1.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-07-08-BUUCTF_WEB_HardSQL1.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-07-31-_2020_%E9%9D%92%E9%BE%99%E7%BB%84_AreUSerialz1.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-07-25-BUUCTF_WEB_BabySQli.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-25-BUUCTF_WEB_ikun.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-12-CTF_SQL.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2019-07-20-php%E7%9F%A5%E8%AF%86.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/2020-09-30-%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9BAWD%E6%80%BB%E7%BB%93.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Bucket.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Cereal.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Delivery.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Love.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Monitors.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/OpenKeyS.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Ophiuchi.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Pit.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Schooled.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/ScriptKiddie.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Spectra.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Tentacle.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/TheNotebook.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Time.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Unobtainum.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/Ttenet.html</loc>
+  <lastmod>2021-06-18T16:16:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/about-the-author.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/getting-started-in-hacking.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-methodology.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/external-recon-methodology.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/phishing-methodology/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/phishing-methodology/clone-a-website.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/phishing-methodology/detecting-phising.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/phishing-methodology/phishing-documents.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/exfiltration.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/tunneling-and-port-forwarding.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/brute-force.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/search-exploits.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/shells/shells/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/shells/shells/untitled.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/shells/shells/windows.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/shells/shells/linux.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/shells/shells/full-ttys.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/linux-privilege-escalation-checklist.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/logstash.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/apparmor.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/containerd-ctr-privilege-escalation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/docker-breakout.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/electron-cef-chromium-debugger-abuse.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/escaping-from-limited-bash.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/cisco-vmanage.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/d-bus-enumeration-and-command-injection-privilege-escalation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/interesting-groups-linux-pe/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/ld.so.conf-example.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/linux-capabilities.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/payloads-to-execute.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/runc-privilege-escalation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/seccomp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/splunk-lpe-and-persistence.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/ssh-forward-agent-exploitation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/socket-command-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/privilege-escalation/wildcards-spare-tricks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/useful-linux-commands/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/useful-linux-commands/bypass-bash-restrictions.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/linux-unix/linux-environment-variables.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/checklist-windows-privilege-escalation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/appenddata-addsubdirectory-permission-over-service-registry.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/create-msi-with-wix.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/dpapi-extracting-passwords.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/seimpersonate-from-high-to-system.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/access-tokens.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/acls-dacls-sacls-aces.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/dll-hijacking.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/from-high-integrity-to-system-with-name-pipes.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/integrity-levels.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/jaws.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/juicypotato.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/leaked-handle-exploitation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/msi-wrapper.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/named-pipe-client-impersonation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/powerup.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/privilege-escalation-abusing-tokens.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/privilege-escalation-with-autorun-binaries.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/rottenpotato.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/seatbelt.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/sedebug-+-seimpersonate-copy-token.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/windows-local-privilege-escalation/windows-c-payloads.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/acl-persistence-abuse.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/ad-information-in-printers.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/asreproast.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/bloodhound.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/constrained-delegation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/custom-ssp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/dcshadow.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/dcsync.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/dsrm-credentials.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/golden-ticket.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/kerberos-authentication.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/kerberoast.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/mssql-trusted-links.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/over-pass-the-hash-pass-the-key.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/pass-the-ticket.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/password-spraying.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/printers-spooler-service-abuse.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/privileged-accounts-and-token-privileges.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/resource-based-constrained-delegation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/security-descriptors.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/silver-ticket.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/skeleton-key.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/active-directory-methodology/unconstrained-delegation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/places-to-steal-ntlm-creds.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/psexec-and-winexec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/smbexec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/wmicexec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/atexec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/ntlm/winrm.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/stealing-credentials/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/stealing-credentials/credentials-protections.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/stealing-credentials/credentials-mimikatz.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/authentication-credentials-uac-and-efs.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/basic-cmd-for-pentesters.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/basic-powershell-for-pentesters/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/basic-powershell-for-pentesters/powerview.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/windows/av-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-checklist.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/android-applications-basics.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/adb-commands.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/apk-decompilers.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/avd-android-virtual-device.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/android-burp-suite-settings.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/content-protocol.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/exploiting-content-providers.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/exploiting-a-debuggeable-applciation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/frida-tutorial/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-1.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-2.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/frida-tutorial/owaspuncrackable-1.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/frida-tutorial/objection-tutorial.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/google-ctf-2018-shall-we-play-a-game.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/make-apk-accept-ca-certificate.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/manual-deobfuscation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/react-native-application.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/reversing-native-libraries.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/smali-changes.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/spoofing-your-location-in-play-store.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/android-app-pentesting/webview-attacks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting-checklist.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/basic-ios-testing-operations.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/burp-configuration-for-ios.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/extracting-entitlements-from-compiled-application.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/frida-configuration-in-ios.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-app-extensions.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-basics.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-custom-uri-handlers-deeplinks-custom-schemes.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-hooking-with-objection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-protocol-handlers.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-serialisation-and-encoding.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-testing-environment.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-uiactivity-sharing.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-universal-links.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-uipasteboard.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/mobile-apps-pentesting/ios-pentesting/ios-webviews.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/spoofing-ssdp-and-upnp-devices.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/wifi-attacks/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/wifi-attacks/evil-twin-eap-tls.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/pentesting-ipv6.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/nmap-summary-esp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/network-protocols-explained-esp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/ids-evasion.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-network/dhcpv6.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-jdwp-java-debug-wire-protocol.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/accounting-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/buffer-overflows.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/credentials-disclosure-brute-force.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/cross-site-printing.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/document-processing.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/factory-defaults.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/file-system-access.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/firmware-updates.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/memory-access.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/physical-damage.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/software-packages.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/transmission-channel.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/print-job-manipulation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/print-job-retention.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-printers/scanner-and-fax.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-sap.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kubernetes/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kubernetes/enumeration-from-a-pod.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kubernetes/hardening-roles-clusterroles.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kubernetes/pentesting-kubernetes-from-the-outside.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/7-tcp-udp-pentesting-echo.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ftp/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ftp/ftp-bounce-attack.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ftp/ftp-bounce-download-2oftp-file.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ssh.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-telnet.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-smtp/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-smtp/smtp-commands.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/43-pentesting-whois.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-dns.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/69-udp-tftp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-finger.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/golang.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/uncovering-cloudflare.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/laravel.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/code-review-tools.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/symphony.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/xss-to-rce-electron-desktop-apps.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/spring-actuators.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/artifactory-hacking-guide.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/apache.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/jsp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/web-api-pentesting.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/buckets/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/buckets/firebase-database.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/buckets/aws-s3.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/cgi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/drupal.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/moodle.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/flask.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/git.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/graphql.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/h2-java-sql-database.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/iis-internet-information-services.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/jboss.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/jenkins.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/jira.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/joomla.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/nginx.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-fpm-fastcgi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-dl-function.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-7.0-7.4-nix-only.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-imagick-less-than-3.3.0-php-greater-than-5.4-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-php-5.x-shellshock-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-php-5.2.4-ioncube-extension-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-less-than-5.2.9-on-windows.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-5.2.4-and-5.2.5-php-curl.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-safe_mode-bypass-via-proc_open-and-custom-environment-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-perl-extension-safe_mode-bypass-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-5.2.3-win32std-ext-protections-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-5.2-fopen-exploit.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-via-mem.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-mod_cgi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/disable_functions-bypass-php-4-greater-than-4.2.0-php-5-pcntl_exec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/python.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/spel-spring-expression-language.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/tomcat.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/vmware-esx-vcenter....html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/put-method-webdav.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/werkzeug.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-web/wordpress.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kerberos-88/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kerberos-88/harvesting-tickets-from-windows.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-kerberos-88/harvesting-tickets-from-linux.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-pop.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-rpcbind.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/113-pentesting-ident.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ntp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/135-pentesting-msrpc.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/137-138-139-pentesting-netbios.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-smb.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-imap.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-snmp/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-snmp/snmp-rce.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-irc.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-264-check-point-firewall-1.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-ldap.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/ipsec-ike-vpn-pentesting.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-modbus.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/512-pentesting-rexec.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-rlogin.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-rsh.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/515-pentesting-line-printer-daemon-lpd.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/584-pentesting-afp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/554-8554-pentesting-rtsp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/623-udp-ipmi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-631-internet-printing-protocol-ipp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/873-pentesting-rsync.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1026-pentesting-rusersd.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1080-pentesting-socks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1099-pentesting-java-rmi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-mssql-microsoft-sql-server.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1521-1522-1529-pentesting-oracle-listener/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1521-1522-1529-pentesting-oracle-listener/oracle-pentesting-requirements-installation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1521-1522-1529-pentesting-oracle-listener/tns-poison.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1521-1522-1529-pentesting-oracle-listener/remote-stealth-pass-brute-force.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1521-1522-1529-pentesting-oracle-listener/oracle-rce-and-more.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1723-pentesting-pptp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/1883-pentesting-mqtt-mosquitto.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/nfs-service-pentesting.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-compaq-hp-insight-manager.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/2375-pentesting-docker.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/3128-pentesting-squid.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/3260-pentesting-iscsi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/3299-pentesting-saprouter.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-mysql.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-rdp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/3632-pentesting-distcc.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/3690-pentesting-subversion-svn-server.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/4369-pentesting-erlang-port-mapper-daemon-epmd.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5000-pentesting-docker-registry.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5353-udp-multicast-dns-mdns.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-postgresql.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5601-pentesting-kibana.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5671-5672-pentesting-amqp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/pentesting-vnc.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5984-pentesting-couchdb.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/5985-5986-pentesting-winrm.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/6000-pentesting-x11.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/6379-pentesting-redis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/8009-pentesting-apache-jserv-protocol-ajp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/8089-splunkd.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/9000-pentesting-fastcgi.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/9001-pentesting-hsqldb.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/cassandra.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/9100-pjl.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/9200-pentesting-elasticsearch.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/10000-network-data-management-protocol-ndmp.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/11211-memcache.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/15672-pentesting-rabbitmq-management.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/27017-27018-mongodb.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/44818-ethernetip.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/47808-udp-bacnet.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting/50030-50060-50070-50075-50090-pentesting-hadoop.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/2fa-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/abusing-hop-by-hop-headers.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/bypass-payment-process.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/captcha-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/cache-deception.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/clickjacking.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/client-side-template-injection-csti.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/command-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/content-security-policy-csp-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/hacking-with-cookies.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/cors-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/crlf-0d-0a.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/cross-site-websocket-hijacking-cswsh.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/csrf-cross-site-request-forgery.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/dangling-markup-html-scriptless-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/nodejs-proto-prototype-pollution.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/java-jsf-viewstate-.faces-deserialization.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/java-dns-deserialization-and-gadgetprobe.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/basic-java-deserialization-objectinputstream-readobject.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/java-transformers-to-rutime-exec-payload.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/basic-.net-deserialization-objectdataprovider-gadgets-expandedwrapper-and-json.net.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/exploiting-__viewstate-knowing-the-secret.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/deserialization/exploiting-__viewstate-parameter.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/domain-subdomain-takeover.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/email-header-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/file-inclusion/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/file-inclusion/phar-deserialization.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/file-inclusion/lfi-linux-list.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/file-upload/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/file-upload/pdf-upload-xxe-and-cors-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/formula-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/http-request-smuggling.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/h2c-smuggling.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/idor.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/hacking-jwt-json-web-tokens.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/nosql-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/ldap-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/oauth-to-account-takeover.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/open-redirect.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/parameter-pollution.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/postmessage-vulnerabilities.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/race-condition.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/rate-limit-bypass.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/regular-expression-denial-of-service-redos.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/reset-password.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/saml-attacks/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/saml-attacks/saml-basics.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/server-side-inclusion-edge-side-inclusion-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/mssql-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/oracle-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/dblink-lo_import-data-exfiltration.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/pl-pgsql-password-bruteforce.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/network-privesc-port-scanner-and-ntlm-chanllenge-response-disclosure.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/big-binary-files-upload-postgresql.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/postgresql-injection/rce-with-postgresql-extensions.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/mysql-injection/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/mysql-injection/mysql-ssrf.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/sqlmap/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/sql-injection/sqlmap/second-order-injection-sqlmap.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/ssrf-server-side-request-forgery.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/ssti-server-side-template-injection/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/ssti-server-side-template-injection/el-expression-language.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/reverse-tab-nabbing.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/unicode-normalization-vulnerability.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/web-tool-wfuzz.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xpath-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xslt-server-side-injection-extensible-stylesheet-languaje-transformations.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xxe-xee-xml-external-entity.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xss-cross-site-scripting/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xss-cross-site-scripting/pdf-injection.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xss-cross-site-scripting/dom-xss.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xss-cross-site-scripting/server-side-xss-dynamic-pdf.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xss-cross-site-scripting/xss-tools.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xssi-cross-site-script-inclusion.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/pentesting-web/xs-search.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/anti-forensic-techniques.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/docker-forensics.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/image-adquisition-and-mount.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/linux-forensics.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/malware-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/memory-dump-analysis/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/partitions-file-systems-carving/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/partitions-file-systems-carving/ext.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/partitions-file-systems-carving/file-data-carving-recovery-tools.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/partitions-file-systems-carving/ntfs.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/pcap-inspection/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/pcap-inspection/dnscat-exfiltration.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/pcap-inspection/usb-keyboard-pcap-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/pcap-inspection/wifi-pcap-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/pcap-inspection/wireshark-tricks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/browser-artifacts.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/desofuscation-vbs-cscript.exe.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/local-cloud-storage.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/office-file-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/pdf-file-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/png-tricks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/video-and-audio-file-analysis.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/specific-software-file-type-tricks/zips-tricks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/windows-forensics/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/forensics/basic-forensic-methodology/windows-forensics/interesting-windows-registry-keys.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/a.i.-exploiting/bra.i.nsmasher-presentation.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/cloud-security/cloud-security-review.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/cloud-security/aws-security.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/physical-attacks/physical-attacks.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/physical-attacks/escaping-from-gui-applications/</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://in1t0.github.io/hacktricks/physical-attacks/escaping-from-gui-applications/show-file-extensions.html</loc>
+  <lastmod>2021-06-18T16:16:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
