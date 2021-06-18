@@ -1,3 +1,16 @@
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: baiduspider
+Disallow: /
+User-agent: yahoo-mmcrawler
+Disallow: /
+User-agent: psbot
+Disallow: /
+User-agent: asterias
+Disallow: /
+User-agent: yahoo-blogs/v3.9
+Disallow: /
 User-agent: *
 Disallow: 
+Disallow: /Hacktricks
 Sitemap: https://in1t0.github.io/sitemap2.xml
