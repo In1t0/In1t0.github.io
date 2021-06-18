@@ -1,0 +1,17 @@
+<h1 id="网御星云-web防护系统-信息泄露漏洞"><a href="#网御星云-web防护系统-信息泄露漏洞" class="headerlink" title="网御星云 web防护系统 信息泄露漏洞"></a>网御星云 web防护系统 信息泄露漏洞</h1><h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>网御星云 web防护系统 存在信息泄露漏洞，通过访问特殊的Url获取部分敏感信息</p>
+<h2 id="漏洞影响"><a href="#漏洞影响" class="headerlink" title="漏洞影响"></a>漏洞影响</h2><blockquote>
+<p>[!NOTE]</p>
+<p>网御星云</p>
+</blockquote>
+<h2 id="FOFA"><a href="#FOFA" class="headerlink" title="FOFA"></a>FOFA</h2><blockquote>
+<p>[!NOTE]</p>
+<p>title=”网页防篡改系统”</p>
+</blockquote>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>登录页面如下</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/image-20210615154709758.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10" alt="image-20210615154709758"></p>
+<p>访问 </p>
+<pre><code>http://xxx.xxx.xxx.xxx/API/
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/image-20210615154739222.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10" alt="image-20210615154739222"></p>
+<p>部分 API请求 不需要登录即可访问获取信息，例如 <strong>/user/list</strong></p>
+<p><img src="http://wikioss.peiqi.tech/vuln/image-20210615154821665.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10" alt="image-20210615154821665"></p>

